@@ -10,8 +10,12 @@ class Main extends MY_Controller {
 	public function index()
 	{
 		$this->load->helper('logic');
+		$CI =& get_instance();
 
-		loadView('main/under_construction');
+		if ($CI->session->userdata('login_params')){
+			$data = $CI->session->userdata('login_params');
+		}
+		loadView('main/under_construction',$data);
 	}
 
 }

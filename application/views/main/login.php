@@ -1,9 +1,12 @@
+	<?php $this->load->helper('logic'); ?>
     <div id="wrappertop"></div>
     <div id="wrapper">
             <div id="content">
+                <div id="header">
+                    <h1><a href=""><img src="/assets/images/bg/logo.png" alt="MiDiUm Books"></a></h1>
+                </div>
                 <div id="darkbanner" class="banner320">
                     <h2>Login</h2>
-    
                 </div>
                 <div id="darkbannerwrap">
                 </div>
@@ -44,3 +47,5 @@
         </div>   
 
 <div id="wrapperbottom_branding"><div id="wrapperbottom_branding_text">By <a href="http://midium.wordpress.com" style='text-decoration:none'>Midium Software</a>. <a href="http://midium.wordpress.com" style='text-decoration:none'>Software for common life</a></div></div>
+
+<?php echo flash_message(); ?>

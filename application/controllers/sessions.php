@@ -20,7 +20,6 @@ class Sessions extends CI_Controller
 	function forgot()
 	{
 		$data['login_page']=false;
-
 		loadView('main/under_construction',$data);		
 
 	}
@@ -55,12 +54,17 @@ class Sessions extends CI_Controller
         	//lets send this data to our success view to display there.        	
         	$data['username'] = $this -> username;
         	$data['password'] = $this -> password;
+			$data['login_page']=false;
         	
 			$this->load->model('user', '', true);
-	log_message('debug','username: '.$data['username'].' pass: '.$data['password']);
+
 			if ($this->user->authenticate($data['username'], $data['password']))
 			{ 
-				$this->session->set_userdata('loggedin', true);
+				$this->session->set_userdata('loggedin', true);				
+				$this->session->set_userdata('login_params',$data);
+				
+			} else {
+				$this->session->set_userdata('message', array('title' => 'Login error', 'content' => 'Username or password doesn\'t match!', 'type' => 'loginerror' ));
 			}
 			
         	//load the data and success view.
@@ -70,8 +74,9 @@ class Sessions extends CI_Controller
 
     function logout()
     {
+		$this->session->unset_userdata('login_params');
         $this->session->unset_userdata('loggedin');
-
-        redirect('/');
+		$data['login_page']=true;
+        redirect('/',$data);
     }
 }

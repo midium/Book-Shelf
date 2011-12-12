@@ -5,3 +5,8 @@
 	font-family:Verdana, Geneva, sans-serif;
 	font-style:italic;
 }
+
+.logout {
+	float:right;
+	margin: -40px 0px;
+}

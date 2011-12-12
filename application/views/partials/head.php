@@ -13,6 +13,7 @@
                 
 				<script src="/js/jquery.validate.js" type="text/javascript"></script>
                 <script src="/js/jquery.validate-rules.js" type="text/javascript"></script>
+                <script src="/js/login.js" type="text/javascript"></script>
                 
 			<? } else { ?>
                 <link rel="stylesheet" href="/css/default.css" type="text/css" />

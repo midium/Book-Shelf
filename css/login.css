@@ -139,7 +139,7 @@ color: #30940b;
 #header {
 	width: 780px; 
 	background: #c5e6ea;
-	padding: 25px 0 5px 20px;
+	padding: 15px 0 10px 20px;
 	border-bottom: #b2ccd0 solid 1px;   
 }
 h1{                      
@@ -1232,4 +1232,14 @@ line-height:15px;
 #dropmenudiv a:hover{ /*hover background color*/
 color:white;
 background-color: #5e5d5d;
+}
+
+#flashmessage{
+    border:1px solid #CCCCCC;
+    width:358px;
+    border:1px solid #c93;
+    background:#ffc;
+    padding:5px;
+    color: #333333;
+    margin:10px 0px 0px 20px;
 }
