@@ -7,21 +7,24 @@
                 </div>
                 <div id="darkbannerwrap">
                 </div>
-                <?php echo form_open('sessions/authenticate',array('name'=>'form1')); 
+                <?php echo validation_errors();
+					  echo form_open('sessions/authenticate',array('id'=>'login_form')); 
 					  echo form_fieldset('', array('class'=>'form'));
-					  echo "<p>";
-					  echo form_label('Username:', 'user_name');
-					  echo form_input(array('name' => 'user_name',
-					   						'id' => 'user_name',
+					  echo '<div class="field">';
+					  echo form_label('Username:', 'username');
+					  echo form_input(array('name' => 'username',
+					   						'id' => 'username',
 											'type' => 'text',
 											'value' => ''));
-					  echo "</p>\n";
-					  echo "<p>";
-					  echo form_label('Password:', 'user_password');
-					  echo form_input(array('name' => 'user_password',
-					   						'id' => 'user_password',
+					  echo form_error('username');
+					  echo "</div>\n";
+					  echo '<div class="field">';
+					  echo form_label('Password:', 'password');
+					  echo form_input(array('name' => 'password',
+					   						'id' => 'password',
 											'type' => 'password'));
-					  echo "</p>\n";
+					  echo form_error('password');
+					  echo "</div>\n";
 					  echo form_button(array('type'=>'submit',
 					  						 'class'=>'positive',
 											 'name'=>'Submit',

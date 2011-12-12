@@ -1,0 +1,135 @@
+Sat Dec 10 16:19:46 
+Sat Dec 10 16:19:46 warning: 32-bit servers don't have journaling enabled by default. Please use --journal if you want durability.
+Sat Dec 10 16:19:46 
+Sat Dec 10 16:19:46 [initandlisten] MongoDB starting : pid=3788 port=27017 dbpath=M:\Codice\bookshelf 32-bit host=midium-PC
+Sat Dec 10 16:19:46 [initandlisten] 
+Sat Dec 10 16:19:46 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
+Sat Dec 10 16:19:46 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
+Sat Dec 10 16:19:46 [initandlisten] **       with --journal, the limit is lower
+Sat Dec 10 16:19:46 [initandlisten] 
+Sat Dec 10 16:19:46 [initandlisten] db version v2.0.1, pdfile version 4.5
+Sat Dec 10 16:19:46 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
+Sat Dec 10 16:19:46 [initandlisten] build info: windows (5, 1, 2600, 2, 'Service Pack 3') BOOST_LIB_VERSION=1_42
+Sat Dec 10 16:19:46 [initandlisten] options: { config: "m:\Codice\bookshelf\mongodb.conf", dbpath: "M:\Codice\bookshelf", logappend: "true", logpath: "M:\Codice\bookshelf\mongodb.log" }
+Sat Dec 10 16:19:46 [initandlisten] waiting for connections on port 27017
+Sat Dec 10 16:19:46 [websvr] admin web console waiting for connections on port 28017
+Sat Dec 10 16:20:46 [clientcursormon] mem (MB) res:15 virt:65 mapped:0
+Sat Dec 10 16:25:46 [clientcursormon] mem (MB) res:15 virt:62 mapped:0
+Sat Dec 10 16:30:46 [clientcursormon] mem (MB) res:15 virt:62 mapped:0
+Sat Dec 10 16:35:46 [clientcursormon] mem (MB) res:15 virt:62 mapped:0
+Sat Dec 10 16:40:47 [clientcursormon] mem (MB) res:15 virt:62 mapped:0
+Sat Dec 10 16:45:47 [clientcursormon] mem (MB) res:15 virt:62 mapped:0
+Sat Dec 10 16:46:01 [initandlisten] connection accepted from 127.0.0.1:4460 #1
+Sat Dec 10 16:46:01 [conn1] end connection 127.0.0.1:4460
+Sat Dec 10 16:47:49 [initandlisten] connection accepted from 127.0.0.1:4465 #2
+Sat Dec 10 16:47:51 [conn2] end connection 127.0.0.1:4465
+Sat Dec 10 16:50:47 [clientcursormon] mem (MB) res:15 virt:63 mapped:0
+Sat Dec 10 16:51:58 Ctrl-C signal
+Sat Dec 10 16:51:58 got kill or ctrl-c signal, will terminate after current cmd ends
+Sat Dec 10 16:51:58 [ctrlCTerminate] now exiting
+Sat Dec 10 16:51:58 dbexit: 
+Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: going to close listening sockets...
+Sat Dec 10 16:51:58 [ctrlCTerminate] closing listening socket: 412
+Sat Dec 10 16:51:58 [ctrlCTerminate] closing listening socket: 416
+Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: going to flush diaglog...
+Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: going to close sockets...
+Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: waiting for fs preallocator...
+Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: closing all files...
+Sat Dec 10 16:51:58 [ctrlCTerminate] closeAllFiles() finished
+Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: removing fs lock...
+Sat Dec 10 16:51:58 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Dec 10 16:57:12 
+Sat Dec 10 16:57:12 warning: 32-bit servers don't have journaling enabled by default. Please use --journal if you want durability.
+Sat Dec 10 16:57:12 
+Sat Dec 10 16:57:12 [initandlisten] MongoDB starting : pid=1344 port=27017 dbpath=M:\Codice\bookshelf 32-bit host=midium-PC
+Sat Dec 10 16:57:12 [initandlisten] 
+Sat Dec 10 16:57:12 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
+Sat Dec 10 16:57:12 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
+Sat Dec 10 16:57:12 [initandlisten] **       with --journal, the limit is lower
+Sat Dec 10 16:57:12 [initandlisten] 
+Sat Dec 10 16:57:12 [initandlisten] db version v2.0.1, pdfile version 4.5
+Sat Dec 10 16:57:12 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
+Sat Dec 10 16:57:12 [initandlisten] build info: windows (5, 1, 2600, 2, 'Service Pack 3') BOOST_LIB_VERSION=1_42
+Sat Dec 10 16:57:12 [initandlisten] options: { config: "m:\Codice\bookshelf\mongodb.conf", dbpath: "M:\Codice\bookshelf", logappend: "true", logpath: "M:\Codice\bookshelf\mongodb.log" }
+Sat Dec 10 16:57:12 [initandlisten] waiting for connections on port 27017
+Sat Dec 10 16:57:12 [websvr] admin web console waiting for connections on port 28017
+Sat Dec 10 16:57:31 [initandlisten] connection accepted from 127.0.0.1:4471 #1
+Sat Dec 10 16:58:12 [clientcursormon] mem (MB) res:15 virt:66 mapped:0
+Sat Dec 10 17:02:41 [conn1] build index bookshelf.users { _id: 1 }
+Sat Dec 10 17:02:41 [conn1] build index done 0 records 0.002 secs
+Sat Dec 10 17:02:41 [conn1] insert bookshelf.users 328ms
+Sat Dec 10 17:03:12 [clientcursormon] mem (MB) res:31 virt:95 mapped:32
+Sat Dec 10 17:04:10 [conn1] end connection 127.0.0.1:4471
+Sat Dec 10 17:04:13 Ctrl-C signal
+Sat Dec 10 17:04:13 got kill or ctrl-c signal, will terminate after current cmd ends
+Sat Dec 10 17:04:13 [ctrlCTerminate] now exiting
+Sat Dec 10 17:04:13 dbexit: 
+Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: going to close listening sockets...
+Sat Dec 10 17:04:13 [ctrlCTerminate] closing listening socket: 412
+Sat Dec 10 17:04:13 [ctrlCTerminate] closing listening socket: 416
+Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: going to flush diaglog...
+Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: going to close sockets...
+Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: waiting for fs preallocator...
+Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: closing all files...
+Sat Dec 10 17:04:13 [ctrlCTerminate] closeAllFiles() finished
+Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: removing fs lock...
+Sat Dec 10 17:04:13 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Sat Dec 10 18:37:32 
+Sat Dec 10 18:37:32 warning: 32-bit servers don't have journaling enabled by default. Please use --journal if you want durability.
+Sat Dec 10 18:37:32 
+Sat Dec 10 18:37:32 [initandlisten] MongoDB starting : pid=6072 port=27017 dbpath=M:\Codice\bookshelf 32-bit host=midium-PC
+Sat Dec 10 18:37:32 [initandlisten] 
+Sat Dec 10 18:37:32 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
+Sat Dec 10 18:37:32 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
+Sat Dec 10 18:37:32 [initandlisten] **       with --journal, the limit is lower
+Sat Dec 10 18:37:32 [initandlisten] 
+Sat Dec 10 18:37:32 [initandlisten] db version v2.0.1, pdfile version 4.5
+Sat Dec 10 18:37:32 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
+Sat Dec 10 18:37:32 [initandlisten] build info: windows (5, 1, 2600, 2, 'Service Pack 3') BOOST_LIB_VERSION=1_42
+Sat Dec 10 18:37:32 [initandlisten] options: { config: "m:\Codice\bookshelf\mongodb.conf", dbpath: "M:\Codice\bookshelf", logappend: "true", logpath: "M:\Codice\bookshelf\mongodb.log" }
+Sat Dec 10 18:37:32 [websvr] admin web console waiting for connections on port 28017
+Sat Dec 10 18:37:32 [initandlisten] waiting for connections on port 27017
+Sat Dec 10 18:37:49 [initandlisten] connection accepted from 127.0.0.1:4905 #1
+Sat Dec 10 18:37:57 [conn1] command admin.$cmd command: { listDatabases: 1.0 } ntoreturn:1 reslen:180 511ms
+Sat Dec 10 18:38:32 [clientcursormon] mem (MB) res:31 virt:98 mapped:32
+Sat Dec 10 18:43:32 [clientcursormon] mem (MB) res:31 virt:95 mapped:32
+Sat Dec 10 18:45:25 [conn1] end connection 127.0.0.1:4905
+Sat Dec 10 18:48:32 [clientcursormon] mem (MB) res:31 virt:94 mapped:32
+Sat Dec 10 18:53:10 [initandlisten] connection accepted from 127.0.0.1:4918 #2
+Sat Dec 10 18:53:32 [clientcursormon] mem (MB) res:31 virt:96 mapped:32
+Sat Dec 10 18:58:32 [clientcursormon] mem (MB) res:31 virt:96 mapped:32
+Sat Dec 10 18:59:34 [initandlisten] connection accepted from 127.0.0.1:5028 #3
+Sat Dec 10 19:01:21 [initandlisten] connection accepted from 127.0.0.1:5054 #4
+Sat Dec 10 19:03:32 [clientcursormon] mem (MB) res:31 virt:98 mapped:32
+Sat Dec 10 19:07:41 [initandlisten] connection accepted from 127.0.0.1:5065 #5
+Sat Dec 10 19:08:32 [clientcursormon] mem (MB) res:31 virt:99 mapped:32
+Sat Dec 10 19:13:32 [clientcursormon] mem (MB) res:31 virt:99 mapped:32
+Sat Dec 10 19:14:07 [initandlisten] connection accepted from 127.0.0.1:5088 #6
+Sat Dec 10 19:18:32 [clientcursormon] mem (MB) res:31 virt:100 mapped:32
+Sat Dec 10 19:19:03 [initandlisten] connection accepted from 127.0.0.1:5115 #7
+Sat Dec 10 19:23:32 [clientcursormon] mem (MB) res:31 virt:101 mapped:32
+Sat Dec 10 19:28:32 [clientcursormon] mem (MB) res:31 virt:101 mapped:32
+Sat Dec 10 19:32:06 Ctrl-C signal
+Sat Dec 10 19:32:06 got kill or ctrl-c signal, will terminate after current cmd ends
+Sat Dec 10 19:32:06 [ctrlCTerminate] now exiting
+Sat Dec 10 19:32:06 dbexit: 
+Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: going to close listening sockets...
+Sat Dec 10 19:32:06 [ctrlCTerminate] closing listening socket: 412
+Sat Dec 10 19:32:06 [ctrlCTerminate] closing listening socket: 416
+Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: going to flush diaglog...
+Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: going to close sockets...
+Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: waiting for fs preallocator...
+Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: closing all files...
+Sat Dec 10 19:32:06 [ctrlCTerminate] closeAllFiles() finished
+Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: removing fs lock...
+Sat Dec 10 19:32:06 dbexit: really exiting now

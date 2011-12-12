@@ -26,17 +26,46 @@ class Sessions extends CI_Controller
 	}
 
     function authenticate()
-    {
-        $this->load->model('user', '', true);
-
-        $user = $this->input->post('user');
-
-        if ($this->user->authenticate($user['email'], $user['password']))
-        {
-            $this->session->set_userdata('loggedin', true);
+	{
+		$this -> output -> enable_profiler( true );
+		
+		$this -> load -> library( 'form_validation' );
+		$this -> form_validation -> set_error_delimiters('<span class="error">', '</span>');
+		
+		$this -> form_validation -> set_rules( 'username', 'Username', 'trim|required|alpha|min_length[3]|max_length[15]' );
+		$this -> form_validation -> set_rules( 'password', 'Password', 'trim|required|min_length[4]|max_length[15]' );
+		
+		//Setting custom error messages
+		$this -> form_validation -> set_message( 'min_length', 'Minimum length for %s is %s characters');
+		$this -> form_validation -> set_message( 'max_length', 'Maximum length for %s is %s characters');
+		
+		if ( $this -> form_validation -> run() == FALSE )
+		{
+			$data['login_page']=true;
+			loadView('main/login',$data);
         }
-
-        redirect('/');
+        else 
+        {
+        	//Form validation is successful, clean the input and use it.
+        	//For example store in db (In this tutorial we wont use database).
+        	$this -> username = $this -> security -> xss_clean( $this -> input -> post( 'username' ) );
+        	$this -> password = $this -> security -> xss_clean( $this -> input -> post( 'password' ) );
+        	        	
+        	//Since we are not storing it to database, 
+        	//lets send this data to our success view to display there.        	
+        	$data['username'] = $this -> username;
+        	$data['password'] = $this -> password;
+        	
+			$this->load->model('user', '', true);
+	log_message('debug','username: '.$data['username'].' pass: '.$data['password']);
+			if ($this->user->authenticate($data['username'], $data['password']))
+			{ 
+				$this->session->set_userdata('loggedin', true);
+			}
+			
+        	//load the data and success view.
+			redirect('/',$data);  
+        }		
     }
 
     function logout()
