@@ -1,12 +1,204 @@
 @charset "utf-8";
 /* CSS Document */
-.h1 {
-	color:#00C;
-	font-family:Verdana, Geneva, sans-serif;
-	font-style:italic;
+body { 
+	margin: 0 
 }
 
-.logout {
+.row, .col { 
+	overflow: hidden; 
+	position: absolute; 
+}
+
+.row { 
+	left: 0; 
+	right: 0; 
+}
+
+.col { 
+	top: 0; 
+	bottom: 0; 
+}
+
+.scroll-x { 
+	overflow-x: auto; 
+}
+
+.scroll-y { 
+	overflow-y: auto; 
+}
+
+.menu.row { 
+	height: 35px; 
+	top: 0; 
+}
+
+.body.row { 
+	top: 35px; 
+	bottom: 30px; 
+	margin: 1px 5px 1px 5px;
+}
+
+.inner-body.row { 
+	top: 45px; 
+	bottom: 0px; 
+	margin: 0px 15px 0px 15px;
+}
+
+.content.row { 
+	top: 0px; 
+	bottom: 0px; 
+}
+
+.footer.row { 
+	height: 25px; 
+	bottom: 0; 
+	font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+	background:black;
+	color:lightgray;
+}
+
+#footer p {
+	padding: 0px 10px;
+	margin: 5px;
+}
+
+.header {
+	border-bottom-style:solid;
+	border-width:1px;
+}
+
+
+#header-menu {
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+#header-menu li {
+	color:#363636;
+	float: left;
+	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+	-webkit-margin-before: 10px;
+	margin:5px 0px 0px 0px;
+}
+
+#header-menu li.button {
 	float:right;
-	margin: -40px 0px;
+	font-size:12px;
+	margin:5px;
+	padding: 0px 5px 5px 0px;
+}
+
+li#button:hover{
+	background-color:lightyellow;
+}
+
+#header-menu li.button img{
+	margin:5px 5px -4px 5px;
+}
+
+/* For Author table header */
+#authors-rounded-corner
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 0px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#authors-rounded-corner thead th.rounded-left
+{
+	background: #b9c9fe;
+}
+#authors-rounded-corner thead th.rounded-right
+{
+	background: #b9c9fe;
+}
+#authors-rounded-corner th
+{
+	padding: 8px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #039;
+	background: #b9c9fe;
+}
+#authors-rounded-corner td
+{
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color: #669;
+}
+#authors-rounded-corner tfoot td.rounded-foot-left
+{
+	padding:0px;
+	background: #e8edff;
+}
+#authors-rounded-corner tfoot td.rounded-foot-right
+{
+	padding:0px;
+	background: #e8edff;
+}
+#authors-rounded-corner tbody tr:hover td
+{
+	background: #d0dafd;
+}
+
+th#name {
+	width:45%;
+}
+
+th#nat {
+	width:45%;
+}
+
+td#edit {
+	background: #e8edff url("/assets/images/icons/edit-user.png") center center no-repeat;
+}
+
+td#delete {
+	background: #e8edff url("/assets/images/icons/delete-user.png") center center no-repeat;
+}
+
+td#books {
+	background: #e8edff url("/assets/images/icons/book-question.png") center center no-repeat;
+}
+
+#authors-rounded-corner tbody tr:hover td#edit {
+	background: #d0dafd url("/assets/images/icons/edit-user.png") center center no-repeat;
+}
+
+#authors-rounded-corner tbody tr:hover td#delete {
+	background: #d0dafd url("/assets/images/icons/delete-user.png") center center no-repeat;
+}
+
+#authors-rounded-corner tbody tr:hover td#books {
+	background: #d0dafd url("/assets/images/icons/book-question.png") center center no-repeat;
+}
+
+/* Author adding form */
+fieldset.form {
+	border:none;
+	font-size:12px;
+}
+
+div.field {
+	float:left;
+	margin: 0px 10px 0px 0px;
+}
+
+#authorname {
+	width:350px;
+}
+
+#nationality {
+	width:250px;
+}
+
+form label {
+margin: 0px 2px 0px 0px;
 }

@@ -5,7 +5,7 @@ function loadView($view,$data=''){
 
 	$CI->load->view('partials/head',$data);
 	$CI->load->view($view,$data);
-	$CI->load->view('partials/foot');
+	$CI->load->view('partials/foot',$data);
 }
 
 function flash_message()
