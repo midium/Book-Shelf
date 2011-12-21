@@ -5,6 +5,7 @@
     
 	<script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
     <script src="/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.liveready-1.0-min.js" type="text/javascript"></script>
     
     <script type="text/javascript">
 	function show_view(view_name) {
@@ -15,15 +16,8 @@
 		 });
 	}
 	
-	function execute_controller(controller_name) {
-		 var p = {};
-		 p['controller'] = controller_name;
-		 $('#body-container').load(controller_name,p,function(str){
-	
-		 });
-	}
     </script>
-        
+    
 	<link rel="shortcut icon" type="image/x-icon" href="/assets/images/icons/books.png"/>    
     <? if (isset($login_page)) {
 			if ($login_page) { ?> 

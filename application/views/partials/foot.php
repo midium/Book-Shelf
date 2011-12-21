@@ -6,5 +6,8 @@ if (isset($login_page)) {
         </div>
 <?		}
 } ?>
+
+<script src="/js/author-functions.js" type="text/javascript"></script>
+
 </body>
 </html>

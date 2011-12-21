@@ -39,7 +39,7 @@ body {
 }
 
 .inner-body.row { 
-	top: 45px; 
+	top: 45px;
 	bottom: 0px; 
 	margin: 0px 15px 0px 15px;
 }
@@ -94,6 +94,7 @@ body {
 
 li#button:hover{
 	background-color:lightyellow;
+	border:1px solid yellow;
 }
 
 #header-menu li.button img{
@@ -200,5 +201,68 @@ div.field {
 }
 
 form label {
-margin: 0px 2px 0px 0px;
+	margin: 0px 2px 0px 0px;
+}
+
+.form button{
+    display:block;
+    float:left;
+    background-color:lightyellow;
+    border:1px solid yellow;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:100%;
+    line-height:130%;
+    text-decoration:none;
+    color:black;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+    _margin-left: 82px;
+}
+.form button{
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+.form button[type]{
+    line-height:17px; /* Safari */
+}
+
+#add-edit-form {
+	background:#b9c9fe;
+	top: 5px;
+	float: left;
+	width: 99.5%;
+	margin: 5px 10px 0px 3px;
+	height: 40px;
+}
+
+div.author-field {
+	float:left;
+	margin: 2px 10px 0px 0px;
+}
+
+#add-edit-form.formProgress {
+	float:left;
+}
+
+div#submit {
+	float:left;
+	margin: 5px 10px 0px 0px;
+}
+
+div#submit:hover{
+	background-color:lightyellow;
+	border:1px solid yellow;
+	cursor:pointer;
+}
+
+div#submit-close {
+	float:left;
+	margin: 5px 10px 0px 0px;
+}
+
+div#submit-close:hover{
+	background-color:lightyellow;
+	border:1px solid yellow;
+	cursor:pointer;
 }

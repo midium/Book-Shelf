@@ -14,7 +14,7 @@
 				//I'm adding new one
 			 	echo form_open('authors/add',array('id'=>'add_form')); 
 				echo form_fieldset('', array('class'=>'form'));
-				echo '<div class="field">';
+				echo '<div class="author-field">';
 				echo form_label('Author name:', 'authorname');
 				echo form_input(array('name' => 'authorname',
 									'id' => 'authorname',
@@ -22,7 +22,7 @@
 									'value' => ''));
 				echo form_error('authorname');
 				echo "</div>\n";
-				echo '<div class="field">';
+				echo '<div class="author-field">';
 				echo form_label('Nationality:', 'nationality');
 				echo form_input(array('name' => 'nationality',
 									'id' => 'nationality',

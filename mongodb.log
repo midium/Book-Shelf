@@ -133,3 +133,362 @@ Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: closing all files...
 Sat Dec 10 19:32:06 [ctrlCTerminate] closeAllFiles() finished
 Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: removing fs lock...
 Sat Dec 10 19:32:06 dbexit: really exiting now
+Thu Dec 15 20:48:24 [initandlisten] connection accepted from 127.0.0.1:48929 #2
+Thu Dec 15 20:48:37 [initandlisten] connection accepted from 127.0.0.1:48930 #3
+Thu Dec 15 20:50:57 [initandlisten] connection accepted from 127.0.0.1:57595 #4
+Thu Dec 15 20:51:03 [clientcursormon] mem (MB) res:28 virt:128 mapped:32
+Thu Dec 15 20:51:16 got kill or ctrl c or hup signal 2 (Interrupt), will terminate after current cmd ends
+Thu Dec 15 20:51:16 [interruptThread] now exiting
+Thu Dec 15 20:51:16 dbexit: 
+Thu Dec 15 20:51:16 [interruptThread] shutdown: going to close listening sockets...
+Thu Dec 15 20:51:16 [interruptThread] closing listening socket: 5
+Thu Dec 15 20:51:16 [interruptThread] closing listening socket: 7
+Thu Dec 15 20:51:16 [interruptThread] shutdown: going to flush diaglog...
+Thu Dec 15 20:51:16 [interruptThread] shutdown: going to close sockets...
+Thu Dec 15 20:51:16 [interruptThread] shutdown: waiting for fs preallocator...
+Thu Dec 15 20:51:16 [interruptThread] shutdown: closing all files...
+Thu Dec 15 20:51:16 [interruptThread] closeAllFiles() finished
+Thu Dec 15 20:51:16 [interruptThread] shutdown: removing fs lock...
+Thu Dec 15 20:51:16 dbexit: really exiting now
+
+
+***** SERVER RESTARTED *****
+
+
+Thu Dec 15 20:51:18 
+Thu Dec 15 20:51:18 warning: 32-bit servers don't have journaling enabled by default. Please use --journal if you want durability.
+Thu Dec 15 20:51:18 
+Thu Dec 15 20:51:18 [initandlisten] MongoDB starting : pid=5283 port=27017 dbpath=/home/midium/htdocs/bookshelf 32-bit host=localhost.localdomain
+Thu Dec 15 20:51:18 [initandlisten] 
+Thu Dec 15 20:51:18 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
+Thu Dec 15 20:51:18 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
+Thu Dec 15 20:51:18 [initandlisten] **       with --journal, the limit is lower
+Thu Dec 15 20:51:18 [initandlisten] 
+Thu Dec 15 20:51:18 [initandlisten] db version v2.0.1, pdfile version 4.5
+Thu Dec 15 20:51:18 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
+Thu Dec 15 20:51:18 [initandlisten] build info: Linux domU-12-31-39-01-70-B4 2.6.21.7-2.fc8xen #1 SMP Fri Feb 15 12:39:36 EST 2008 i686 BOOST_LIB_VERSION=1_41
+Thu Dec 15 20:51:18 [initandlisten] options: { config: "/home/midium/htdocs/bookshelf/mongodb-linux.conf", dbpath: "/home/midium/htdocs/bookshelf", logappend: "true", logpath: "/home/midium/htdocs/bookshelf/mongodb.log" }
+Thu Dec 15 20:51:18 [initandlisten] couldn't unlink socket file /tmp/mongodb-27017.sockerrno:1 Operation not permitted skipping
+Thu Dec 15 20:51:18 [initandlisten] waiting for connections on port 27017
+Thu Dec 15 20:51:18 [websvr] admin web console waiting for connections on port 28017
+Thu Dec 15 20:51:45 [initandlisten] connection accepted from 127.0.0.1:57596 #1
+Thu Dec 15 20:52:09 [conn1] end connection 127.0.0.1:57596
+Thu Dec 15 20:52:18 [clientcursormon] mem (MB) res:28 virt:125 mapped:32
+Thu Dec 15 20:52:26 [initandlisten] connection accepted from 127.0.0.1:57597 #2
+Thu Dec 15 20:53:08 [initandlisten] connection accepted from 127.0.0.1:57598 #3
+Thu Dec 15 20:54:05 [initandlisten] connection accepted from 127.0.0.1:57599 #4
+Thu Dec 15 20:54:07 [initandlisten] connection accepted from 127.0.0.1:57600 #5
+Thu Dec 15 20:54:57 [initandlisten] connection accepted from 127.0.0.1:57601 #6
+Thu Dec 15 20:54:57 [conn6] build index bookshelf.authors { _id: 1 }
+Thu Dec 15 20:54:57 [conn6] build index done 0 records 0.003 secs
+Thu Dec 15 20:54:57 [conn6] fsync from getlasterror
+Thu Dec 15 20:54:57 [conn6] build index bookshelf.authors { name: 1, nationality: 1 }
+Thu Dec 15 20:54:57 [conn6] build index done 1 records 0.001 secs
+Thu Dec 15 20:57:18 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
+Thu Dec 15 21:02:18 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
+Thu Dec 15 21:07:19 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
+Thu Dec 15 21:12:19 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
+Thu Dec 15 21:17:19 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
+Thu Dec 15 21:17:48 [initandlisten] connection accepted from 127.0.0.1:56230 #7
+Thu Dec 15 21:20:10 [initandlisten] connection accepted from 127.0.0.1:56231 #8
+Thu Dec 15 21:20:10 [initandlisten] connection accepted from 127.0.0.1:56232 #9
+Thu Dec 15 21:20:10 [conn8] end connection 127.0.0.1:56231
+Thu Dec 15 21:20:27 [conn9] fsync from getlasterror
+Thu Dec 15 21:22:19 [clientcursormon] mem (MB) res:29 virt:133 mapped:32
+Thu Dec 15 21:23:18 [initandlisten] connection accepted from 127.0.0.1:36060 #10
+Thu Dec 15 21:24:17 [initandlisten] connection accepted from 127.0.0.1:36061 #11
+Thu Dec 15 21:24:17 [initandlisten] connection accepted from 127.0.0.1:36062 #12
+Thu Dec 15 21:24:17 [conn11] end connection 127.0.0.1:36061
+Thu Dec 15 21:24:54 [conn10] fsync from getlasterror
+Thu Dec 15 21:27:20 [clientcursormon] mem (MB) res:29 virt:135 mapped:32
+Thu Dec 15 21:32:20 [clientcursormon] mem (MB) res:29 virt:135 mapped:32
+Thu Dec 15 21:37:20 [clientcursormon] mem (MB) res:29 virt:135 mapped:32
+Thu Dec 15 21:42:20 [clientcursormon] mem (MB) res:29 virt:135 mapped:32
+Thu Dec 15 21:44:44 [conn2] fsync from getlasterror
+Thu Dec 15 21:47:20 [clientcursormon] mem (MB) res:29 virt:135 mapped:32
+Thu Dec 15 21:47:29 [initandlisten] connection accepted from 127.0.0.1:54602 #13
+Thu Dec 15 21:47:29 [initandlisten] connection accepted from 127.0.0.1:54603 #14
+Thu Dec 15 21:47:29 [conn13] end connection 127.0.0.1:54602
+Thu Dec 15 21:47:55 [conn3] fsync from getlasterror
+Thu Dec 15 21:48:33 [conn14] fsync from getlasterror
+Thu Dec 15 21:48:33 [conn3] fsync from getlasterror
+Thu Dec 15 21:48:34 [conn7] fsync from getlasterror
+Thu Dec 15 21:49:01 [conn6] fsync from getlasterror
+Thu Dec 15 21:49:21 [conn6] fsync from getlasterror
+Thu Dec 15 21:49:21 [initandlisten] connection accepted from 127.0.0.1:54604 #15
+Thu Dec 15 21:49:21 [conn15] end connection 127.0.0.1:54604
+Thu Dec 15 21:49:21 [initandlisten] connection accepted from 127.0.0.1:54605 #16
+Thu Dec 15 21:49:21 [conn12] fsync from getlasterror
+Thu Dec 15 21:49:38 [conn12] fsync from getlasterror
+Thu Dec 15 21:49:38 [conn12] fsync from getlasterror
+Thu Dec 15 21:49:38 [conn9] fsync from getlasterror
+Thu Dec 15 21:49:38 [conn9] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 106ms
+Thu Dec 15 21:49:38 [conn6] fsync from getlasterror
+Thu Dec 15 21:49:38 [conn16] fsync from getlasterror
+Thu Dec 15 21:49:38 [conn10] fsync from getlasterror
+Thu Dec 15 21:49:38 [conn4] fsync from getlasterror
+Thu Dec 15 21:50:31 [conn7] fsync from getlasterror
+Thu Dec 15 21:50:31 [conn14] fsync from getlasterror
+Thu Dec 15 21:50:31 [conn3] fsync from getlasterror
+Thu Dec 15 21:50:31 [conn12] fsync from getlasterror
+Thu Dec 15 21:50:31 [initandlisten] connection accepted from 127.0.0.1:54606 #17
+Thu Dec 15 21:50:31 [conn7] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 117ms
+Thu Dec 15 21:50:31 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 166ms
+Thu Dec 15 21:50:31 [conn7] fsync from getlasterror
+Thu Dec 15 21:50:31 [conn3] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 225ms
+Thu Dec 15 21:50:31 [conn12] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 262ms
+Thu Dec 15 21:50:32 [conn3] fsync from getlasterror
+Thu Dec 15 21:50:32 [conn14] fsync from getlasterror
+Thu Dec 15 21:50:32 [conn7] fsync from getlasterror
+Thu Dec 15 21:50:32 [conn12] fsync from getlasterror
+Thu Dec 15 21:50:32 [conn5] fsync from getlasterror
+Thu Dec 15 21:50:32 [conn17] fsync from getlasterror
+Thu Dec 15 21:50:32 [conn7] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 116ms
+Thu Dec 15 21:50:32 [conn3] fsync from getlasterror
+Thu Dec 15 21:50:32 [conn12] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 163ms
+Thu Dec 15 21:50:32 [conn14] fsync from getlasterror
+Thu Dec 15 21:50:32 [conn5] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 269ms
+Thu Dec 15 21:50:32 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 102ms
+Thu Dec 15 21:50:32 [conn12] fsync from getlasterror
+Thu Dec 15 21:50:32 [conn17] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 348ms
+Thu Dec 15 21:50:32 [conn7] fsync from getlasterror
+Thu Dec 15 21:50:32 [conn12] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 127ms
+Thu Dec 15 21:50:32 [conn7] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 207ms
+Thu Dec 15 21:50:33 [conn5] query bookshelf.authors ntoreturn:999999 nscanned:33 nreturned:33 reslen:2210 263ms
+Thu Dec 15 21:50:33 [conn3] query bookshelf.authors ntoreturn:999999 nscanned:33 nreturned:33 reslen:2210 291ms
+Thu Dec 15 21:50:33 [conn7] query bookshelf.authors nscanned:33 nreturned:33 reslen:2210 416ms
+Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn16] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn12] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn10] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn4] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn6] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn12] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn12] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn12] fsync from getlasterror
+Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn12] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn16] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 731ms
+Thu Dec 15 21:51:44 [conn4] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 690ms
+Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn12] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn12] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn12] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn9] fsync from getlasterror
+Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
+Thu Dec 15 21:51:46 [conn10] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 3073ms
+Thu Dec 15 21:51:46 [conn4] fsync from getlasterror
+Thu Dec 15 21:51:46 [conn6] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 3103ms
+Thu Dec 15 21:52:05 [conn16] fsync from getlasterror
+Thu Dec 15 21:52:22 [clientcursormon] mem (MB) res:29 virt:138 mapped:32
+Thu Dec 15 21:52:54 [initandlisten] connection accepted from 127.0.0.1:51603 #18
+Thu Dec 15 21:55:17 [conn18] end connection 127.0.0.1:51603
+Thu Dec 15 21:55:23 [initandlisten] connection accepted from 127.0.0.1:51604 #19
+Thu Dec 15 21:57:22 [clientcursormon] mem (MB) res:29 virt:139 mapped:32
+Thu Dec 15 21:58:54 [conn19] CMD: drop bookshelf.authors
+Thu Dec 15 21:58:54 [conn19] command bookshelf.$cmd command: { drop: "authors" } ntoreturn:1 reslen:124 144ms
+Thu Dec 15 21:59:19 [conn3] build index bookshelf.authors { _id: 1 }
+Thu Dec 15 21:59:19 [conn3] build index done 0 records 0.001 secs
+Thu Dec 15 21:59:19 [conn3] fsync from getlasterror
+Thu Dec 15 21:59:19 [conn3] build index bookshelf.authors { name: 1, nationality: 1 }
+Thu Dec 15 21:59:19 [conn3] build index done 1 records 0.001 secs
+Thu Dec 15 22:02:22 [clientcursormon] mem (MB) res:29 virt:139 mapped:32
+Thu Dec 15 22:05:56 [conn4] fsync from getlasterror
+Thu Dec 15 22:07:23 [clientcursormon] mem (MB) res:29 virt:139 mapped:32
+Thu Dec 15 22:07:35 [conn16] fsync from getlasterror
+Thu Dec 15 22:08:41 [conn3] fsync from getlasterror
+Thu Dec 15 22:08:41 [conn3] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 255ms
+Thu Dec 15 22:12:23 [clientcursormon] mem (MB) res:29 virt:139 mapped:32
+Thu Dec 15 22:12:51 [conn17] fsync from getlasterror
+Thu Dec 15 22:12:51 [conn7] fsync from getlasterror
+Thu Dec 15 22:12:51 [conn17] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 170ms
+Thu Dec 15 22:12:51 [conn7] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 178ms
+Thu Dec 15 22:13:19 [conn14] fsync from getlasterror
+Thu Dec 15 22:13:19 [conn6] fsync from getlasterror
+Thu Dec 15 22:13:20 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 158ms
+Thu Dec 15 22:13:20 [conn6] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 136ms
+Thu Dec 15 22:14:53 [conn7] fsync from getlasterror
+Thu Dec 15 22:15:18 [conn17] fsync from getlasterror
+Thu Dec 15 22:15:18 [conn17] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 263ms
+Thu Dec 15 22:16:45 [conn5] fsync from getlasterror
+Thu Dec 15 22:17:16 [conn4] fsync from getlasterror
+Thu Dec 15 22:17:16 [conn4] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 137ms
+Thu Dec 15 22:17:23 [clientcursormon] mem (MB) res:29 virt:139 mapped:32
+Thu Dec 15 22:18:07 [initandlisten] connection accepted from 127.0.0.1:42564 #20
+Thu Dec 15 22:18:17 [conn20] fsync from getlasterror
+Thu Dec 15 22:18:17 [conn20] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 188ms
+Mon Dec 19 14:19:36 [clientcursormon] mem (MB) res:29 virt:140 mapped:32
+Mon Dec 19 14:20:43 [initandlisten] connection accepted from 127.0.0.1:42565 #21
+Mon Dec 19 14:20:57 [conn21] fsync from getlasterror
+Mon Dec 19 14:20:57 [conn21] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 211ms
+Mon Dec 19 14:24:36 [clientcursormon] mem (MB) res:29 virt:141 mapped:32
+Mon Dec 19 14:25:51 [initandlisten] connection accepted from 127.0.0.1:36061 #22
+Mon Dec 19 14:26:36 [initandlisten] connection accepted from 127.0.0.1:36063 #23
+Mon Dec 19 14:29:37 [clientcursormon] mem (MB) res:29 virt:143 mapped:32
+Mon Dec 19 14:34:37 [clientcursormon] mem (MB) res:29 virt:143 mapped:32
+Mon Dec 19 14:39:37 [clientcursormon] mem (MB) res:29 virt:143 mapped:32
+Mon Dec 19 14:44:37 [clientcursormon] mem (MB) res:29 virt:143 mapped:32
+Mon Dec 19 14:49:27 [conn17] fsync from getlasterror
+Mon Dec 19 14:49:37 [clientcursormon] mem (MB) res:29 virt:143 mapped:32
+Mon Dec 19 14:49:52 [conn3] fsync from getlasterror
+Mon Dec 19 14:50:27 [conn20] fsync from getlasterror
+Mon Dec 19 14:50:27 [conn7] fsync from getlasterror
+Mon Dec 19 14:50:46 [conn7] fsync from getlasterror
+Mon Dec 19 14:50:49 [conn7] fsync from getlasterror
+Mon Dec 19 14:50:49 [conn6] fsync from getlasterror
+Mon Dec 19 14:51:20 [conn22] fsync from getlasterror
+Mon Dec 19 14:53:05 [conn17] fsync from getlasterror
+Mon Dec 19 14:53:14 [conn17] fsync from getlasterror
+Mon Dec 19 14:53:14 [conn3] fsync from getlasterror
+Mon Dec 19 14:53:14 [initandlisten] connection accepted from 127.0.0.1:34418 #24
+Mon Dec 19 14:53:15 [conn24] fsync from getlasterror
+Mon Dec 19 14:54:37 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
+Mon Dec 19 14:59:37 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
+Mon Dec 19 15:04:38 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
+Mon Dec 19 15:09:38 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
+Mon Dec 19 15:14:38 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
+Mon Dec 19 15:19:38 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
+Mon Dec 19 15:24:38 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
+Mon Dec 19 15:26:03 [initandlisten] connection accepted from 127.0.0.1:46797 #25
+Mon Dec 19 15:29:38 [clientcursormon] mem (MB) res:29 virt:145 mapped:32
+Mon Dec 19 15:34:38 [clientcursormon] mem (MB) res:29 virt:145 mapped:32
+Mon Dec 19 15:35:03 [conn5] fsync from getlasterror
+Mon Dec 19 15:35:14 [conn5] fsync from getlasterror
+Mon Dec 19 15:37:09 [conn14] remove bookshelf.authors query: { _id: ObjectId('4eea71ec7f8b9afb0a000008') } 118ms
+Mon Dec 19 15:37:32 [conn2] fsync from getlasterror
+Mon Dec 19 15:38:05 [conn16] fsync from getlasterror
+Mon Dec 19 15:39:28 [conn4] fsync from getlasterror
+Mon Dec 19 15:39:36 [conn6] fsync from getlasterror
+Mon Dec 19 15:39:36 [conn4] fsync from getlasterror
+Mon Dec 19 15:39:39 [clientcursormon] mem (MB) res:29 virt:145 mapped:32
+Mon Dec 19 15:39:47 [conn17] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn5] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn20] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn2] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn5] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 135ms
+Mon Dec 19 15:39:47 [conn17] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn5] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn20] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 203ms
+Mon Dec 19 15:39:47 [conn20] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn5] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 103ms
+Mon Dec 19 15:39:47 [conn17] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn2] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 246ms
+Mon Dec 19 15:39:47 [conn5] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn20] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 109ms
+Mon Dec 19 15:39:47 [conn2] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn17] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn20] fsync from getlasterror
+Mon Dec 19 15:39:47 [conn6] fsync from getlasterror
+Mon Dec 19 15:39:48 [conn14] fsync from getlasterror
+Mon Dec 19 15:39:48 [conn4] fsync from getlasterror
+Mon Dec 19 15:39:48 [conn7] fsync from getlasterror
+Mon Dec 19 15:40:39 [initandlisten] connection accepted from 127.0.0.1:59640 #26
+Mon Dec 19 15:43:31 [conn23] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn14] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn12] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn23] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn9] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn22] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn12] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 156ms
+Mon Dec 19 15:43:31 [conn14] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn12] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 213ms
+Mon Dec 19 15:43:31 [conn9] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 197ms
+Mon Dec 19 15:43:31 [conn9] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn12] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn23] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn22] fsync from getlasterror
+Mon Dec 19 15:43:31 [conn14] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 110ms
+Mon Dec 19 15:43:32 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 145ms
+Mon Dec 19 15:43:32 [conn12] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn9] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn23] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn22] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn14] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn12] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 130ms
+Mon Dec 19 15:43:32 [conn9] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn22] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 126ms
+Mon Dec 19 15:43:32 [conn12] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 165ms
+Mon Dec 19 15:43:32 [conn9] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 125ms
+Mon Dec 19 15:43:32 [conn23] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn14] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 102ms
+Mon Dec 19 15:43:32 [conn12] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn9] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn23] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 132ms
+Mon Dec 19 15:43:32 [conn22] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn14] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 118ms
+Mon Dec 19 15:43:32 [conn12] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn21] fsync from getlasterror
+Mon Dec 19 15:43:32 [conn24] fsync from getlasterror
+Mon Dec 19 15:43:33 [conn25] fsync from getlasterror
+Mon Dec 19 15:43:33 [conn6] fsync from getlasterror
+Mon Dec 19 15:44:30 [conn2] query bookshelf.authors ntoreturn:999999 nscanned:29 nreturned:29 reslen:1863 4600ms
+Mon Dec 19 15:45:34 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
+Mon Dec 19 15:46:07 [conn6] query bookshelf.authors ntoreturn:999999 nscanned:19 nreturned:19 reslen:1253 163ms
+Mon Dec 19 15:48:14 [conn20] fsync from getlasterror
+Mon Dec 19 15:48:14 [conn25] fsync from getlasterror
+Mon Dec 19 15:48:14 [conn20] build index bookshelf.authors { _id: 1, name: 1, nationality: 1 }
+Mon Dec 19 15:48:14 [conn20] build index done 7 records 0.02 secs
+Mon Dec 19 15:48:14 [conn25] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 176ms
+Mon Dec 19 15:48:15 [conn20] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn25] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn16] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn24] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn6] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn23] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn3] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn2] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn20] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn25] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn16] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn25] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn20] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn16] fsync from getlasterror
+Mon Dec 19 15:48:15 [conn24] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 364ms
+Mon Dec 19 15:48:15 [conn6] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 373ms
+Mon Dec 19 15:48:15 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 380ms
+Mon Dec 19 15:48:15 [conn3] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 388ms
+Mon Dec 19 15:48:15 [conn2] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 397ms
+Mon Dec 19 15:50:47 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
+Mon Dec 19 15:51:35 [conn9] fsync from getlasterror
+Mon Dec 19 15:51:35 [conn9] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 135ms
+Mon Dec 19 15:52:11 [conn5] fsync from getlasterror
+Mon Dec 19 15:52:12 [conn24] fsync from getlasterror
+Mon Dec 19 15:52:12 [conn26] fsync from getlasterror
+Mon Dec 19 15:52:12 [conn22] fsync from getlasterror
+Mon Dec 19 15:52:12 [conn12] fsync from getlasterror
+Mon Dec 19 15:55:56 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
+Mon Dec 19 15:55:58 [conn2] fsync from getlasterror
+Mon Dec 19 15:55:58 [conn2] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 124ms
+Mon Dec 19 15:57:27 [conn3] fsync from getlasterror
+Mon Dec 19 15:57:27 [conn3] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 169ms
+Mon Dec 19 15:57:46 [conn3] fsync from getlasterror
+Mon Dec 19 15:57:47 [conn3] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 176ms
+Mon Dec 19 15:58:30 [conn23] fsync from getlasterror
+Mon Dec 19 15:58:30 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 139ms
+Mon Dec 19 16:00:56 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
+Mon Dec 19 16:04:11 [conn22] fsync from getlasterror
+Mon Dec 19 16:04:11 [conn24] fsync from getlasterror
+Mon Dec 19 16:04:11 [conn2] fsync from getlasterror
+Mon Dec 19 16:05:10 [conn9] fsync from getlasterror
+Mon Dec 19 16:05:10 [conn9] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 136ms
+Mon Dec 19 16:05:57 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
+Tue Dec 20 09:32:44 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
