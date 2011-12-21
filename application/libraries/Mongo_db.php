@@ -58,7 +58,7 @@ class Mongo_db {
 			show_error("The MongoDB PECL extension has not been installed or enabled", 500);
 		}
 		
-		$this->CI =& get_instance();
+		$this->CI = get_instance();
 		$this->connection_string();
 		$this->connect();
 	}
@@ -625,6 +625,37 @@ class Mongo_db {
 
 	 }
 	
+	 public function get_no_automatic_id($collection = "")
+	 {
+	 	if (empty($collection))
+	 	{
+	 		show_error("In order to retreive documents from MongoDB, a collection name must be passed", 500);
+	 	}
+	 	 		 	
+	 	$documents = $this->db->{$collection}->find($this->wheres, $this->selects)->limit((int) $this->limit)->skip((int) $this->offset)->sort($this->sorts);
+	 	
+	 	// Clear
+	 	$this->_clear();
+	 	
+	 	$returns = array();
+	 	
+	 	while ($documents->hasNext())
+		{
+			$returns[] = (object) $documents->getNext();
+		}
+	 	
+	 	if ($this->CI->config->item('mongo_return') == 'object')
+		{
+			return (object)$returns;
+		}
+		
+		else
+		{
+			return $returns;
+		}
+
+	 }
+	
 	/**
 	*	--------------------------------------------------------------------------------
 	*	Count
@@ -1091,40 +1122,6 @@ class Mongo_db {
 		}
 		
 	}
-	
-	 /**
-	 *	--------------------------------------------------------------------------------
-	 *	DELETE ID
-	 *	--------------------------------------------------------------------------------
-	 *
-	 *	delete document from the passed collection based upon id
-	 *
-	 *	@usage = $this->mongo_db->delete('foo', $data = array());
-	 */
-	
-	 public function delete_id($collection = "", $id="")
-	 {
-	 	if(empty($collection))
-	 	{
-	 		show_error("No Mongo collection selected to delete from", 500);
-	 	}
-	 	
-	 	if(empty($id))
-	 	{
-	 		show_error("ID not specified", 500);
-	 	}
-		
-	 	try
-	 	{
-	 		$this->db->{$collection}->remove(array('_id' => new MongoId($id)));
-	 		return(TRUE);
-	 	}
-	 	catch(MongoCursorException $e)
-	 	{
-	 		show_error("Delete of data into MongoDB failed: {$e->getMessage()}", 500);
-	 	}
-	 	
-	 }
 	
 	/**
 	*	--------------------------------------------------------------------------------

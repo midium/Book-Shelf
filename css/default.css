@@ -149,26 +149,6 @@ li#button:hover{
 	background: #d0dafd;
 }
 
-th#name {
-	width:45%;
-}
-
-th#nat {
-	width:45%;
-}
-
-td#edit {
-	background: #e8edff url("/assets/images/icons/edit-user.png") center center no-repeat;
-}
-
-td#delete {
-	background: #e8edff url("/assets/images/icons/delete-user.png") center center no-repeat;
-}
-
-td#books {
-	background: #e8edff url("/assets/images/icons/book-question.png") center center no-repeat;
-}
-
 #authors-rounded-corner tbody tr:hover td#edit {
 	background: #d0dafd url("/assets/images/icons/edit-user.png") center center no-repeat;
 }
@@ -179,6 +159,106 @@ td#books {
 
 #authors-rounded-corner tbody tr:hover td#books {
 	background: #d0dafd url("/assets/images/icons/book-question.png") center center no-repeat;
+}
+
+#authors-rounded-corner thead th#name {
+	width:45%;
+}
+
+#authors-rounded-corner thead th#nat {
+	width:45%;
+}
+
+#authors-rounded-corner tbody td#edit {
+	background: #e8edff url("/assets/images/icons/edit-user.png") center center no-repeat;
+}
+
+#authors-rounded-corner tbody td#delete {
+	background: #e8edff url("/assets/images/icons/delete-user.png") center center no-repeat;
+}
+
+#authors-rounded-corner tbody td#books {
+	background: #e8edff url("/assets/images/icons/book-question.png") center center no-repeat;
+}
+
+/* For Publisher table header */
+#publishers-rounded-corner
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 0px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#publishers-rounded-corner thead th.rounded-left
+{
+	background: #b9c9fe;
+}
+#publishers-rounded-corner thead th.rounded-right
+{
+	background: #b9c9fe;
+}
+#publishers-rounded-corner th
+{
+	padding: 8px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #039;
+	background: #b9c9fe;
+}
+#publishers-rounded-corner td
+{
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color: #669;
+}
+#publishers-rounded-corner tfoot td.rounded-foot-left
+{
+	padding:0px;
+	background: #e8edff;
+}
+#publishers-rounded-corner tfoot td.rounded-foot-right
+{
+	padding:0px;
+	background: #e8edff;
+}
+#publishers-rounded-corner tbody tr:hover td
+{
+	background: #d0dafd;
+}
+
+#publishers-rounded-corner tbody tr:hover td#edit {
+	background: #d0dafd url("/assets/images/icons/publish-pencil.png") center center no-repeat;
+}
+
+#publishers-rounded-corner tbody tr:hover td#delete {
+	background: #d0dafd url("/assets/images/icons/publish-minus.png") center center no-repeat;
+}
+
+#publishers-rounded-corner tbody tr:hover td#books {
+	background: #d0dafd url("/assets/images/icons/book-question.png") center center no-repeat;
+}
+
+#publishers-rounded-corner thead th#name {
+	width:45%;
+}
+
+#publishers-rounded-corner thead th#nat {
+	width:45%;
+}
+
+#publishers-rounded-corner tbody td#edit {
+	background: #e8edff url("/assets/images/icons/publish-pencil.png") center center no-repeat;
+}
+
+#publishers-rounded-corner tbody td#delete {
+	background: #e8edff url("/assets/images/icons/publish-minus.png") center center no-repeat;
+}
+
+#publishers-rounded-corner tbody td#books {
+	background: #e8edff url("/assets/images/icons/book-question.png") center center no-repeat;
 }
 
 /* Author adding form */

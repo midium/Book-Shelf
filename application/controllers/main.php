@@ -39,15 +39,13 @@ class Main extends MY_Controller {
 				break;
 				
 			case '/main/authors':
-				$data['authors']=$this->mongo_manage->getAuthorsList();
-			
+				$data['authors']=$this->mongo_manage->getAuthorsList();			
 				break;
 				
-			case '/main/add_edit_author':
-				$data['edit']=false;
-				
+			case '/main/publishers':
+				$data['publishers']=$this->mongo_manage->getPublishersList();			
 				break;
-				
+							
 			default:
 				break;
 		}

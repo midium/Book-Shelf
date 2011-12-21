@@ -7,6 +7,17 @@ class Mongo_Manage extends CI_Model
         parent::__construct();
 		$this->load->library('Mongo_db');
 	}
+
+    public function getPublishersList()
+    {		
+		$publishers = '';
+		
+		if($this->mongo_db->switch_db('bookshelf')) {
+			$publishers = $this->mongo_db->get('publishers');
+		}
+
+        return $publishers;
+    }
 	
     public function getAuthorsList()
     {		
@@ -24,9 +35,11 @@ class Mongo_Manage extends CI_Model
 		$author_data = array('name' => $author,
 							 'nationality' => $nationality);
 
-		//Adding author
-		$this->mongo_db->insert('authors',$author_data);
-		$this->mongo_db->add_index('authors',array('_id' => 'ASC', 'name' => 'ASC', 'nationality' => 'ASC'));		
+		if($this->mongo_db->switch_db('bookshelf')) {
+			//Adding author
+			$this->mongo_db->insert('authors',$author_data);
+			$this->mongo_db->add_index('authors',array('_id' => 'ASC', 'name' => 'ASC', 'nationality' => 'ASC'));		
+		}
 		
 		return true;
 	}
@@ -34,7 +47,10 @@ class Mongo_Manage extends CI_Model
 	public function deleteAuthor($author_id) {
 
 		//Removing author
-		$this->mongo_db->delete_id('authors',$author_id);
+		if($this->mongo_db->switch_db('bookshelf')) {
+			$this->mongo_db->where('_id', $author_id);
+			$this->mongo_db->delete('authors');
+		}
 		
 		return true;
 	}
@@ -42,13 +58,15 @@ class Mongo_Manage extends CI_Model
 	public function editAuthor($id, $author, $nationality) {
 		
 		//Setting updates
-		$this->mongo_db->where('_id', $id);
-		$this->mongo_db->set('name', $author);
-		$this->mongo_db->set('nationality', $nationality);
-		
-		//Storing updates
-		$this->mongo_db->update('authors');
-		$this->mongo_db->add_index('authors',array('_id' => 'ASC', 'name' => 'ASC', 'nationality' => 'ASC'));		
+		if($this->mongo_db->switch_db('bookshelf')) {
+			$this->mongo_db->where('_id', $id);
+			$this->mongo_db->set('name', $author);
+			$this->mongo_db->set('nationality', $nationality);
+			
+			//Storing updates
+			$this->mongo_db->update('authors');
+			$this->mongo_db->add_index('authors',array('_id' => 'ASC', 'name' => 'ASC', 'nationality' => 'ASC'));		
+		}
 		
 		return true;
 	}
