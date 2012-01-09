@@ -191,7 +191,21 @@
   
   $('td#books-genre').live("click", function() {		
     //	call the removing routine
+	var dataString = 'genre='+ $(this).parent().find("#name").html();
+		$.ajax({
+			type: "POST",
+			url: "books/get_genre_books",
+			data: dataString,
+			success: function(msg) {
 
-	alert("Functionality not yet available!");
+				$('div#body-container').html(msg);
+
+			},
+			error: function(ob,errStr) {
+				alert('There was an error retrieving the genre\'s books. Please try again.');
+			}
+		});
+	
+	return false;
   });
   //---------------------------------

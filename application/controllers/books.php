@@ -262,4 +262,91 @@ class Books extends MY_Controller {
 		}
 
 	}
+	
+	public function get_author_books(){
+		$CI =& get_instance();
+		
+		$search['title'] = '';
+		$search['author'] = $this->input->post('author');
+		$search['publisher'] = '';
+		$search['genres'] = '';
+		$search['pages'] = '';
+		$search['vote'] = '';
+
+		$where['title'] = '';
+		$where['author'] = 'like';
+		$where['publisher'] = '';
+		$where['genres'] = '';
+		$where['pages'] = '';
+		$where['vote'] = '';
+		
+		$data['login_page']=false;
+		$data['books_searched']=true;
+		$data['author_name']=$search['author'];
+		$books_finded=$this->mongo_manage->findBooks($search, $where);
+
+		if ($books_finded!='') {
+			$data['books']=$books_finded;
+		}
+
+		$CI->load->view('/main/books',$data);
+	}
+	
+	public function get_publisher_books(){
+		$CI =& get_instance();
+		
+		$search['title'] = '';
+		$search['author'] = '';
+		$search['publisher'] = $this->input->post('publisher');
+		$search['genres'] = '';
+		$search['pages'] = '';
+		$search['vote'] = '';
+
+		$where['title'] = '';
+		$where['author'] = '';
+		$where['publisher'] = 'like';
+		$where['genres'] = '';
+		$where['pages'] = '';
+		$where['vote'] = '';
+		
+		$data['login_page']=false;
+		$data['books_searched']=true;
+		$data['publisher']=$search['publisher'];
+		$books_finded=$this->mongo_manage->findBooks($search, $where);
+
+		if ($books_finded!='') {
+			$data['books']=$books_finded;
+		}
+
+		$CI->load->view('/main/books',$data);
+	}
+	
+	public function get_genre_books(){
+		$CI =& get_instance();
+		
+		$search['title'] = '';
+		$search['author'] = '';
+		$search['publisher'] = '';
+		$search['genres'] = $this->input->post('genre');
+		$search['pages'] = '';
+		$search['vote'] = '';
+
+		$where['title'] = '';
+		$where['author'] = '';
+		$where['publisher'] = '';
+		$where['genres'] = 'like';
+		$where['pages'] = '';
+		$where['vote'] = '';
+		
+		$data['login_page']=false;
+		$data['books_searched']=true;
+		$data['genre']=$search['genres'];
+		$books_finded=$this->mongo_manage->findBooks($search, $where);
+
+		if ($books_finded!='') {
+			$data['books']=$books_finded;
+		}
+
+		$CI->load->view('/main/books',$data);
+	}
 }

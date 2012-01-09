@@ -50,9 +50,6 @@ class Authors extends MY_Controller {
 		$nationality = $this->input->post('nationality');
 		$author_id = $this->input->post('id');
 		
-		//$this->mongo_manage->deleteAuthor($author_id);
-		//$this->mongo_manage->addAuthor($author, $nationality);
-		
 		//Need to check why it won't work this way		
 		$this->mongo_manage->editAuthor($author_id, $author, $nationality);
 

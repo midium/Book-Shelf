@@ -1,6 +1,20 @@
 <?php
 $CI =& get_instance();
 $CI->load->helper('books');
+
+$books_of='';
+if(isset($author_name)){
+	 $books_of = '"'.$author_name.'" ';
+	}
+	
+if(isset($publisher)){
+	 $books_of = '"'.$publisher.'" ';
+	}
+	
+if(isset($genre)){
+	 $books_of = '"'.$genre.'" ';
+	}
+
 ?>
 
 <script src="/js/book-controls-init.js" type="text/javascript"></script>
@@ -8,7 +22,7 @@ $CI->load->helper('books');
 <div class="ui-widget">
     <div id="data-container" class="ui-state-highlight ui-corner-all content row" style="padding: 0 .7em;">
         <ul id="header-menu" class="header menu row">
-	       <li><strong">Books (<?php echo count($books); if(isset($books_searched)){echo ' founded';}else{echo ' inserted';}?>)</strong></li>
+	       <li><strong"><?php echo $books_of; ?>Books (<?php echo count($books); if(isset($books_searched)){echo ' founded';}else{echo ' inserted';}?>)</strong></li>
            <li id="search-button" class="button"><img id="button-image" src="/assets/images/icons/magnifier.png" alt="Search books">Search</li>
            <li id="book-button" class="button"><img id="button-image" src="/assets/images/icons/book-plus.png" alt="New book">New book</li>
            <li id="all-button" class="button" <?php if(isset($books_searched)){echo '';}else{echo 'style="display:none"';} ?>><img id="button-image" src="/assets/images/icons/books.png" alt="Show all book">Show all book</li>
