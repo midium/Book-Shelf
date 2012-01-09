@@ -5,7 +5,6 @@
     
 	<script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
     <script src="/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
-    <script src="/js/jquery.liveready-1.0-min.js" type="text/javascript"></script>
     
     <script type="text/javascript">
 	function show_view(view_name) {
@@ -15,7 +14,6 @@
 	
 		 });
 	}
-	
     </script>
     
 	<link rel="shortcut icon" type="image/x-icon" href="/assets/images/icons/books.png"/>    
@@ -31,11 +29,21 @@
                 <link rel="stylesheet" href="/css/default.css" type="text/css" />
                 <link type="text/css" href="/css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
 				<link rel="stylesheet" href="/css/menu_style.css" type="text/css" />
+				<script src="/js/jquery.tagsinput.js"></script>
+                <link rel="stylesheet" type="text/css" href="/css/jquery.tagsinput.css" />
+				<script src="/js/jquery.rating.js"></script>
+                <link rel="stylesheet" type="text/css" href="/css/jquery.rating.css" />
+                <script src="/js/ajaxupload.3.6.js"></script>
     <? 		   }
 	   } else { ?>
             <link rel="stylesheet" href="/css/default.css" type="text/css" />
             <link type="text/css" href="/css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
 			<link rel="stylesheet" href="/css/menu_style.css" type="text/css" />
+			<script src="/js/jquery.tagsinput.js"></script>
+            <link rel="stylesheet" type="text/css" href="/css/jquery.tagsinput.css" />
+			<script src="/js/jquery.rating.js"></script>
+            <link rel="stylesheet" type="text/css" href="/css/jquery.rating.css" />
+            <script src="/js/ajaxupload.3.6.js"></script>
     <? } ?>     
 </head>
 <body <?php if($login_page) { echo('id="login"'); } else { echo(''); } ?>>

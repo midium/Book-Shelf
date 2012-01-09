@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body { 
-	margin: 0 
+	margin: 0 	
 }
 
 .row, .col { 
@@ -41,7 +41,7 @@ body {
 .inner-body.row { 
 	top: 45px;
 	bottom: 0px; 
-	margin: 0px 15px 0px 15px;
+	margin: 0px 15px 15px 15px;
 }
 
 .content.row { 
@@ -67,6 +67,9 @@ body {
 	border-width:1px;
 }
 
+label {
+	font-weight: bold;
+}
 
 #header-menu {
 	float: left;
@@ -88,13 +91,18 @@ body {
 #header-menu li.button {
 	float:right;
 	font-size:12px;
-	margin:5px;
+	/*margin:5px;*/
 	padding: 0px 5px 5px 0px;
 }
 
 li#button:hover{
-	background-color:lightyellow;
+	background-color:white;
 	border:1px solid yellow;
+}
+
+li#button{
+	border:1px solid transparent;
+	margin:3px 0px 0px 0px;
 }
 
 #header-menu li.button img{
@@ -229,35 +237,115 @@ li#button:hover{
 	background: #d0dafd;
 }
 
-#publishers-rounded-corner tbody tr:hover td#edit {
+#publishers-rounded-corner tbody tr:hover td#edit-pub {
 	background: #d0dafd url("/assets/images/icons/publish-pencil.png") center center no-repeat;
 }
 
-#publishers-rounded-corner tbody tr:hover td#delete {
+#publishers-rounded-corner tbody tr:hover td#delete-pub {
 	background: #d0dafd url("/assets/images/icons/publish-minus.png") center center no-repeat;
 }
 
-#publishers-rounded-corner tbody tr:hover td#books {
+#publishers-rounded-corner tbody tr:hover td#books-pub {
 	background: #d0dafd url("/assets/images/icons/book-question.png") center center no-repeat;
 }
 
 #publishers-rounded-corner thead th#name {
-	width:45%;
+	width:30%;
 }
 
-#publishers-rounded-corner thead th#nat {
-	width:45%;
+#publishers-rounded-corner thead th#email {
+	width:30%;
 }
 
-#publishers-rounded-corner tbody td#edit {
+#publishers-rounded-corner thead th#web {
+	width:30%;
+}
+
+#publishers-rounded-corner tbody td#edit-pub {
 	background: #e8edff url("/assets/images/icons/publish-pencil.png") center center no-repeat;
 }
 
-#publishers-rounded-corner tbody td#delete {
+#publishers-rounded-corner tbody td#delete-pub {
 	background: #e8edff url("/assets/images/icons/publish-minus.png") center center no-repeat;
 }
 
-#publishers-rounded-corner tbody td#books {
+#publishers-rounded-corner tbody td#books-pub {
+	background: #e8edff url("/assets/images/icons/book-question.png") center center no-repeat;
+}
+
+/* For genres table header */
+#genres-rounded-corner
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 0px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#genres-rounded-corner thead th.rounded-left
+{
+	background: #b9c9fe;
+}
+#genres-rounded-corner thead th.rounded-right
+{
+	background: #b9c9fe;
+}
+#genres-rounded-corner th
+{
+	padding: 8px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #039;
+	background: #b9c9fe;
+}
+#genres-rounded-corner td
+{
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color: #669;
+}
+#genres-rounded-corner tfoot td.rounded-foot-left
+{
+	padding:0px;
+	background: #e8edff;
+}
+#genres-rounded-corner tfoot td.rounded-foot-right
+{
+	padding:0px;
+	background: #e8edff;
+}
+#genres-rounded-corner tbody tr:hover td
+{
+	background: #d0dafd;
+}
+
+#genres-rounded-corner tbody tr:hover td#edit-genre {
+	background: #d0dafd url("/assets/images/icons/genre-pencil.png") center center no-repeat;
+}
+
+#genres-rounded-corner tbody tr:hover td#delete-genre {
+	background: #d0dafd url("/assets/images/icons/genre-minus.png") center center no-repeat;
+}
+
+#genres-rounded-corner tbody tr:hover td#books-genre {
+	background: #d0dafd url("/assets/images/icons/book-question.png") center center no-repeat;
+}
+
+#genres-rounded-corner thead th#name {
+	width:90%;
+}
+
+#genres-rounded-corner tbody td#edit-genre {
+	background: #e8edff url("/assets/images/icons/genre-pencil.png") center center no-repeat;
+}
+
+#genres-rounded-corner tbody td#delete-genre {
+	background: #e8edff url("/assets/images/icons/genre-minus.png") center center no-repeat;
+}
+
+#genres-rounded-corner tbody td#books-genre {
 	background: #e8edff url("/assets/images/icons/book-question.png") center center no-repeat;
 }
 
@@ -345,4 +433,482 @@ div#submit-close:hover{
 	background-color:lightyellow;
 	border:1px solid yellow;
 	cursor:pointer;
+}
+
+/* Publisher adding form */
+#publisher {
+	width:300px;
+}
+
+#pub-email {
+	width:200px;
+}
+
+#pub-web {
+	width:200px;
+}
+
+#publish-add-edit-form{
+	background:#b9c9fe;
+	top: 5px;
+	float: left;
+	width: 99.5%;
+	margin: 5px 10px 0px 3px;
+	height: 40px;
+}
+
+div.publisher-field {
+	float:left;
+	margin: 2px 10px 0px 0px;
+}
+
+#publish-add-edit-form.formProgress {
+	float:left;
+}
+
+/* Genres adding form */
+#genre {
+	width:400px;
+}
+
+#genre-add-edit-form{
+	background:#b9c9fe;
+	top: 5px;
+	float: left;
+	width: 99.5%;
+	margin: 5px 10px 0px 3px;
+	height: 40px;
+}
+
+div.genre-field {
+	float:left;
+	margin: 2px 10px 0px 0px;
+}
+
+#genre-add-edit-form.formProgress {
+	float:left;
+}
+
+/* Books adding form */
+#book {
+	width:400px;
+}
+
+#book-add-edit-form{
+	background:#b9c9fe;
+	top: 5px;
+	float: left;
+	width: 99.6%;
+	margin: 5px 10px 0px 3px;
+	height: 339px;
+}
+
+#book-search-form{
+	background:#b9c9fe;
+	top: 5px;
+	float: left;
+	width: 99.6%;
+	margin: 5px 10px 0px 3px;
+	height: 122px;
+}
+
+div.book-field {
+	float:left;
+	margin: 2px 10px 0px 0px;
+}
+
+#book-add-edit-form.formProgress {
+	float:left;
+}
+
+/* For books table header */
+#books-rounded-corner
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 0px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+#book-add-form{
+	height: 100%;
+	width: 100%;
+}
+#books-rounded-corner thead th.rounded-left
+{
+	background: #b9c9fe;
+}
+#books-rounded-corner thead th.rounded-right
+{
+	background: #b9c9fe;
+}
+#books-rounded-corner th
+{
+	padding: 8px;
+	font-weight: normal;
+	font-size: 13px;
+	color: #039;
+	background: #b9c9fe;
+}
+#books-rounded-corner td
+{
+	padding: 8px;
+	background: #e8edff;
+	border-top: 1px solid #fff;
+	color: #669;
+}
+#books-rounded-corner tfoot td.rounded-foot-left
+{
+	padding:0px;
+	background: #e8edff;
+}
+#books-rounded-corner tfoot td.rounded-foot-right
+{
+	padding:0px;
+	background: #e8edff;
+}
+#books-rounded-corner tbody tr:hover td
+{
+	background: #d0dafd;
+}
+
+#books-rounded-corner tbody tr:hover td#edit-genre {
+	background: #d0dafd url("/assets/images/icons/genre-pencil.png") center center no-repeat;
+}
+
+#books-rounded-corner tbody tr:hover td#delete-genre {
+	background: #d0dafd url("/assets/images/icons/genre-minus.png") center center no-repeat;
+}
+
+#books-rounded-corner tbody tr:hover td#books-genre {
+	background: #d0dafd url("/assets/images/icons/book-question.png") center center no-repeat;
+}
+
+#books-rounded-corner thead th#name {
+	width:90%;
+}
+
+#books-rounded-corner tbody td#edit-genre {
+	background: #e8edff url("/assets/images/icons/genre-pencil.png") center center no-repeat;
+}
+
+#books-rounded-corner tbody td#delete-genre {
+	background: #e8edff url("/assets/images/icons/genre-minus.png") center center no-repeat;
+}
+
+#books-rounded-corner tbody td#books-genre {
+	background: #e8edff url("/assets/images/icons/book-question.png") center center no-repeat;
+}
+
+/* Books page */
+th#cover {
+	width:6%;
+	height:auto;
+}
+
+th#book-info {
+	width:25%;
+}
+
+th#book-description {
+	width:70%;
+}
+
+img#cover {
+	height:100px;
+}
+
+div#label {
+	float: left;
+	width: 75px;
+	padding-top: 2px;
+}
+
+div#value {
+	padding-top: 2px;
+}
+
+li#book-button{
+	border:1px solid transparent;
+	margin: 3px 0px 0px 0px;
+}
+
+li#book-button:hover{
+	background-color:white;
+	border:1px solid yellow;
+}
+
+li#all-button{
+	border:1px solid transparent;
+	margin: 3px 0px 0px 0px;
+}
+
+li#all-button:hover{
+	background-color:white;
+	border:1px solid yellow;
+	cursor: pointer;
+}
+
+li#search-button {
+	border:1px solid transparent;
+	margin: 3px 0px 0px 0px;
+}
+
+li#search-button:hover{
+	background-color:white;
+	border:1px solid yellow;
+	cursor: pointer;
+}
+
+#insert-book label {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+
+#search-book label {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+}
+
+#insert-book td#label {
+	width: 10%;
+}
+
+#insert-book td#pages-label {
+	width: 5%;
+}
+
+#insert-book td#value {
+	width: 63%;	
+}
+
+#insert-book td#spacer {
+	width: 15%;	
+}
+
+#insert-book td#pages-value input {
+	width: 98%;	
+}
+
+#insert-book td#year-value input {
+	width: 98%;	
+}
+
+#insert-book td#buyed-value input {
+	width: 65%;	
+}
+
+#insert-book td#vote-label {
+	width: 5%;
+}
+
+#insert-book td#vote-value input {
+	width: 98%;	
+}
+
+#insert-book input {
+	font-size: 12px;
+	width: 99%;
+}
+
+#search-book input {
+	font-size: 12px;
+	width: 99%;
+}
+
+#insert-book td#tmp-cover {
+	border: 1px solid;
+	text-align: center;
+	vertical-align:middle;
+}
+
+#insert-book td#choose-cover {
+	border: 1px solid;
+	background:#e8edff url("/assets/images/icons/image-import.png") center center no-repeat;
+	width: 13%;
+}
+
+#insert-book td#delete-cover {
+	border: 1px solid;
+	background:#e8edff url("/assets/images/icons/bin-metal.png") center center no-repeat;
+}
+/*
+#insert-book td#choose-cover:hover {
+	border: 1px solid;
+	cursor:pointer;
+	background:yellow url("/assets/images/icons/image-import.png") center center no-repeat;
+	width: 13%;
+}
+*/
+#insert-book td#delete-cover:hover {
+	border: 1px solid;
+	cursor:pointer;
+	background:#e8edff url("/assets/images/icons/bin-metal.png") center center no-repeat;
+}
+
+textarea#description {
+	width: 99.6%;
+	height: 50px;
+	font-size:12px;
+	resize:none;
+}
+
+td#commit {
+	font-size:12px;
+	font-weight:bold;
+	margin: 5px 10px 0px 0px;
+}
+
+td#commit:hover{
+	font-size:12px;
+	background-color:lightyellow;
+	border:1px solid yellow;
+	cursor:pointer;
+}
+
+div#commit-search {
+	font-size:12px;
+	font-weight:bold;
+	width: 45%;
+	margin: 5px 10px 0px 0px;
+	float: left;
+}
+
+div#commit-search:hover{
+	font-size:12px;
+	background-color:lightyellow;
+	border:1px solid yellow;
+	cursor:pointer;
+}
+
+td#abort {
+	font-size:12px;
+	font-weight:bold;
+	text-align:right;
+	margin: 5px 10px 0px 0px;
+}
+
+td#abort:hover{
+	font-size:12px;
+	background-color:lightyellow;
+	border:1px solid yellow;
+	cursor:pointer;
+}
+
+div#abort-search {
+	font-size:12px;
+	font-weight:bold;
+	text-align:right;
+	width: 45%;
+	float: right;
+	margin: 5px 10px 0px 0px;
+}
+
+div#abort-search:hover{
+	font-size:12px;
+	background-color:lightyellow;
+	border:1px solid yellow;
+	cursor:pointer;
+}
+
+div#genre-tags_addTag {
+	height: 19px;
+	font-size: 10px;
+}
+
+input#genre-tags_tag {
+	font-size:11px;
+}
+
+div#genre-tags_tagsinput {
+	width: 98.5%;
+	border-color:#A0A0A0;
+}
+
+div#genre-search_addTag {
+	height: 19px;
+	font-size: 10px;
+}
+
+input#genre-search_tag {
+	font-size:11px;
+}
+
+div#genre-search_tagsinput {
+	width: 98.5%;
+	border-color:#A0A0A0;
+}
+
+td#label {
+	text-align:right;
+
+	padding: 0px;
+	border: 0px;
+	border-spacing: 0px;
+}
+
+td#value {
+	padding: 0px 0px 0px 2px;
+	border: 0px;
+	border-spacing: 0px;
+}
+
+td#pages-label {
+	text-align:right;
+}
+
+td#vote-label {
+	text-align:right;
+}
+
+td span#formProgress {
+	font-size:12px;
+	float: right;
+	margin-right: 10px;
+}
+
+td span#formProgress img {
+	margin: -2px 3px -4px;
+}
+
+#books-rounded-corner tbody td div#book-edit {
+	background: #e8edff url("/assets/images/icons/book-pencil.png") center center no-repeat;
+	float: left;
+	height:24px;
+	width:24px;
+}
+
+#books-rounded-corner tbody td div#book-delete {
+	background: #e8edff url("/assets/images/icons/book-minus.png") center center no-repeat;
+	float: left;
+	height:24px;
+	width:24px;
+}
+
+div#book-edit:hover {
+	cursor: pointer;
+}
+
+div#book-delete:hover {
+	cursor: pointer;
+}
+
+#books-rounded-corner tbody tr:hover div#book-edit {
+	background: #d0dafd url("/assets/images/icons/book-pencil.png") center center no-repeat;
+}
+
+#books-rounded-corner tbody tr:hover div#book-delete {
+	background: #d0dafd url("/assets/images/icons/book-minus.png") center center no-repeat;
+}
+
+span#drop select {
+	font-size: 12px;
+	width: 99%;
+}
+
+td#value-search {
+	width: 16.6%;
 }

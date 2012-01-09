@@ -8,6 +8,9 @@ if (isset($login_page)) {
 } ?>
 
 <script src="/js/author-functions.js" type="text/javascript"></script>
+<script src="/js/publisher-functions.js" type="text/javascript"></script>
+<script src="/js/genres-functions.js" type="text/javascript"></script>
+<script src="/js/book-functions.js" type="text/javascript"></script>
 
 </body>
 </html>

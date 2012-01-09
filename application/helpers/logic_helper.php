@@ -28,4 +28,11 @@ function flash_message()
 	
 	return $html;
 }
+
+function file_extension($filename)
+{
+	$path_info = pathinfo($filename);
+	return strtolower($path_info['extension']);
+}
+
 ?>

@@ -10,7 +10,7 @@ class Authors extends MY_Controller {
 
 	public function add_author(){
 		$CI =& get_instance();
-		
+
 		$author = $this->input->post('authorname');
 		$nationality = $this->input->post('nationality');
 

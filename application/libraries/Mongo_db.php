@@ -58,7 +58,7 @@ class Mongo_db {
 			show_error("The MongoDB PECL extension has not been installed or enabled", 500);
 		}
 		
-		$this->CI = get_instance();
+		$this->CI =& get_instance();
 		$this->connection_string();
 		$this->connect();
 	}
@@ -478,11 +478,12 @@ class Mongo_db {
 	
 	public function like($field = "", $value = "", $flags = "i", $enable_start_wildcard = TRUE, $enable_end_wildcard = TRUE)
 	 {
+
 	 	$field = (string) trim($field);
-	 	$this->where_init($field);
+	 	$this->_where_init($field);
 	 	$value = (string) trim($value);
 	 	$value = quotemeta($value);
-	 	
+
 	 	if ($enable_start_wildcard !== TRUE)
 	 	{
 	 		$value = "^" . $value;
@@ -600,7 +601,7 @@ class Mongo_db {
 		{
 			$this->wheres['_id'] = new MongoId($this->wheres['_id']);
 		}
-	 		 	
+	 	//print_r($this->wheres);die();
 	 	$documents = $this->db->{$collection}->find($this->wheres, $this->selects)->limit((int) $this->limit)->skip((int) $this->offset)->sort($this->sorts);
 	 	
 	 	// Clear

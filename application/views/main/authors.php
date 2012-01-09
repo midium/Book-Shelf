@@ -1,7 +1,7 @@
 <div class="ui-widget">
-    <div class="ui-state-highlight ui-corner-all content row" style="padding: 0 .7em;">
+    <div id="data-container" class="ui-state-highlight ui-corner-all content row" style="padding: 0 .7em;">
         <ul id="header-menu" class="header menu row">
-	        <li><strong">Authors</strong></li>
+	        <li><strong">Authors (<?php echo count($authors); echo ' inserted';?>)</strong></li>
            <li id="button" class="button"><img id="button-image" src="/assets/images/icons/add-user.png" alt="New author">New author</li>
         </ul>        
         

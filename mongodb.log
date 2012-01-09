@@ -1,494 +1,469 @@
-Sat Dec 10 16:19:46 
-Sat Dec 10 16:19:46 warning: 32-bit servers don't have journaling enabled by default. Please use --journal if you want durability.
-Sat Dec 10 16:19:46 
-Sat Dec 10 16:19:46 [initandlisten] MongoDB starting : pid=3788 port=27017 dbpath=M:\Codice\bookshelf 32-bit host=midium-PC
-Sat Dec 10 16:19:46 [initandlisten] 
-Sat Dec 10 16:19:46 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
-Sat Dec 10 16:19:46 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
-Sat Dec 10 16:19:46 [initandlisten] **       with --journal, the limit is lower
-Sat Dec 10 16:19:46 [initandlisten] 
-Sat Dec 10 16:19:46 [initandlisten] db version v2.0.1, pdfile version 4.5
-Sat Dec 10 16:19:46 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
-Sat Dec 10 16:19:46 [initandlisten] build info: windows (5, 1, 2600, 2, 'Service Pack 3') BOOST_LIB_VERSION=1_42
-Sat Dec 10 16:19:46 [initandlisten] options: { config: "m:\Codice\bookshelf\mongodb.conf", dbpath: "M:\Codice\bookshelf", logappend: "true", logpath: "M:\Codice\bookshelf\mongodb.log" }
-Sat Dec 10 16:19:46 [initandlisten] waiting for connections on port 27017
-Sat Dec 10 16:19:46 [websvr] admin web console waiting for connections on port 28017
-Sat Dec 10 16:20:46 [clientcursormon] mem (MB) res:15 virt:65 mapped:0
-Sat Dec 10 16:25:46 [clientcursormon] mem (MB) res:15 virt:62 mapped:0
-Sat Dec 10 16:30:46 [clientcursormon] mem (MB) res:15 virt:62 mapped:0
-Sat Dec 10 16:35:46 [clientcursormon] mem (MB) res:15 virt:62 mapped:0
-Sat Dec 10 16:40:47 [clientcursormon] mem (MB) res:15 virt:62 mapped:0
-Sat Dec 10 16:45:47 [clientcursormon] mem (MB) res:15 virt:62 mapped:0
-Sat Dec 10 16:46:01 [initandlisten] connection accepted from 127.0.0.1:4460 #1
-Sat Dec 10 16:46:01 [conn1] end connection 127.0.0.1:4460
-Sat Dec 10 16:47:49 [initandlisten] connection accepted from 127.0.0.1:4465 #2
-Sat Dec 10 16:47:51 [conn2] end connection 127.0.0.1:4465
-Sat Dec 10 16:50:47 [clientcursormon] mem (MB) res:15 virt:63 mapped:0
-Sat Dec 10 16:51:58 Ctrl-C signal
-Sat Dec 10 16:51:58 got kill or ctrl-c signal, will terminate after current cmd ends
-Sat Dec 10 16:51:58 [ctrlCTerminate] now exiting
-Sat Dec 10 16:51:58 dbexit: 
-Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: going to close listening sockets...
-Sat Dec 10 16:51:58 [ctrlCTerminate] closing listening socket: 412
-Sat Dec 10 16:51:58 [ctrlCTerminate] closing listening socket: 416
-Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: going to flush diaglog...
-Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: going to close sockets...
-Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: waiting for fs preallocator...
-Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: closing all files...
-Sat Dec 10 16:51:58 [ctrlCTerminate] closeAllFiles() finished
-Sat Dec 10 16:51:58 [ctrlCTerminate] shutdown: removing fs lock...
-Sat Dec 10 16:51:58 dbexit: really exiting now
+Sat Dec 24 12:41:48 
+Sat Dec 24 12:41:48 warning: 32-bit servers don't have journaling enabled by default. Please use --journal if you want durability.
+Sat Dec 24 12:41:48 
+Sat Dec 24 12:41:48 [initandlisten] MongoDB starting : pid=3994 port=27017 dbpath=/home/midium/htdocs/bookshelf 32-bit host=localhost.localdomain
+Sat Dec 24 12:41:48 [initandlisten] 
+Sat Dec 24 12:41:48 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
+Sat Dec 24 12:41:48 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
+Sat Dec 24 12:41:48 [initandlisten] **       with --journal, the limit is lower
+Sat Dec 24 12:41:48 [initandlisten] 
+Sat Dec 24 12:41:48 [initandlisten] db version v2.0.1, pdfile version 4.5
+Sat Dec 24 12:41:48 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
+Sat Dec 24 12:41:48 [initandlisten] build info: Linux domU-12-31-39-01-70-B4 2.6.21.7-2.fc8xen #1 SMP Fri Feb 15 12:39:36 EST 2008 i686 BOOST_LIB_VERSION=1_41
+Sat Dec 24 12:41:48 [initandlisten] options: { config: "/home/midium/htdocs/bookshelf/mongodb-linux.conf", dbpath: "/home/midium/htdocs/bookshelf", logappend: "true", logpath: "/home/midium/htdocs/bookshelf/mongodb.log" }
+************** 
+Unclean shutdown detected.
+Please visit http://dochub.mongodb.org/core/repair for recovery instructions.
+*************
+Sat Dec 24 12:41:48 [initandlisten] exception in initAndListen: 12596 old lock file, terminating
+Sat Dec 24 12:41:48 dbexit: 
+Sat Dec 24 12:41:48 [initandlisten] shutdown: going to close listening sockets...
+Sat Dec 24 12:41:48 [initandlisten] shutdown: going to flush diaglog...
+Sat Dec 24 12:41:48 [initandlisten] shutdown: going to close sockets...
+Sat Dec 24 12:41:48 [initandlisten] shutdown: waiting for fs preallocator...
+Sat Dec 24 12:41:48 [initandlisten] shutdown: closing all files...
+Sat Dec 24 12:41:48 [initandlisten] closeAllFiles() finished
+Sat Dec 24 12:41:48 dbexit: really exiting now
 
 
 ***** SERVER RESTARTED *****
 
 
-Sat Dec 10 16:57:12 
-Sat Dec 10 16:57:12 warning: 32-bit servers don't have journaling enabled by default. Please use --journal if you want durability.
-Sat Dec 10 16:57:12 
-Sat Dec 10 16:57:12 [initandlisten] MongoDB starting : pid=1344 port=27017 dbpath=M:\Codice\bookshelf 32-bit host=midium-PC
-Sat Dec 10 16:57:12 [initandlisten] 
-Sat Dec 10 16:57:12 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
-Sat Dec 10 16:57:12 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
-Sat Dec 10 16:57:12 [initandlisten] **       with --journal, the limit is lower
-Sat Dec 10 16:57:12 [initandlisten] 
-Sat Dec 10 16:57:12 [initandlisten] db version v2.0.1, pdfile version 4.5
-Sat Dec 10 16:57:12 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
-Sat Dec 10 16:57:12 [initandlisten] build info: windows (5, 1, 2600, 2, 'Service Pack 3') BOOST_LIB_VERSION=1_42
-Sat Dec 10 16:57:12 [initandlisten] options: { config: "m:\Codice\bookshelf\mongodb.conf", dbpath: "M:\Codice\bookshelf", logappend: "true", logpath: "M:\Codice\bookshelf\mongodb.log" }
-Sat Dec 10 16:57:12 [initandlisten] waiting for connections on port 27017
-Sat Dec 10 16:57:12 [websvr] admin web console waiting for connections on port 28017
-Sat Dec 10 16:57:31 [initandlisten] connection accepted from 127.0.0.1:4471 #1
-Sat Dec 10 16:58:12 [clientcursormon] mem (MB) res:15 virt:66 mapped:0
-Sat Dec 10 17:02:41 [conn1] build index bookshelf.users { _id: 1 }
-Sat Dec 10 17:02:41 [conn1] build index done 0 records 0.002 secs
-Sat Dec 10 17:02:41 [conn1] insert bookshelf.users 328ms
-Sat Dec 10 17:03:12 [clientcursormon] mem (MB) res:31 virt:95 mapped:32
-Sat Dec 10 17:04:10 [conn1] end connection 127.0.0.1:4471
-Sat Dec 10 17:04:13 Ctrl-C signal
-Sat Dec 10 17:04:13 got kill or ctrl-c signal, will terminate after current cmd ends
-Sat Dec 10 17:04:13 [ctrlCTerminate] now exiting
-Sat Dec 10 17:04:13 dbexit: 
-Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: going to close listening sockets...
-Sat Dec 10 17:04:13 [ctrlCTerminate] closing listening socket: 412
-Sat Dec 10 17:04:13 [ctrlCTerminate] closing listening socket: 416
-Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: going to flush diaglog...
-Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: going to close sockets...
-Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: waiting for fs preallocator...
-Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: closing all files...
-Sat Dec 10 17:04:13 [ctrlCTerminate] closeAllFiles() finished
-Sat Dec 10 17:04:13 [ctrlCTerminate] shutdown: removing fs lock...
-Sat Dec 10 17:04:13 dbexit: really exiting now
+Sat Dec 24 12:44:02 [initandlisten] MongoDB starting : pid=4081 port=27017 dbpath=/home/midium/htdocs/bookshelf 32-bit host=localhost.localdomain
+Sat Dec 24 12:44:02 [initandlisten] 
+Sat Dec 24 12:44:02 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
+Sat Dec 24 12:44:02 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
+Sat Dec 24 12:44:02 [initandlisten] **       with --journal, the limit is lower
+Sat Dec 24 12:44:02 [initandlisten] 
+Sat Dec 24 12:44:02 [initandlisten] db version v2.0.1, pdfile version 4.5
+Sat Dec 24 12:44:02 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
+Sat Dec 24 12:44:02 [initandlisten] build info: Linux domU-12-31-39-01-70-B4 2.6.21.7-2.fc8xen #1 SMP Fri Feb 15 12:39:36 EST 2008 i686 BOOST_LIB_VERSION=1_41
+Sat Dec 24 12:44:02 [initandlisten] options: { config: "/home/midium/htdocs/bookshelf/mongodb-linux.conf", dbpath: "/home/midium/htdocs/bookshelf", journal: true, logappend: "true", logpath: "/home/midium/htdocs/bookshelf/mongodb.log" }
+************** 
+old lock file: /home/midium/htdocs/bookshelf/mongod.lock.  probably means unclean shutdown,
+but there are no journal files to recover.
+this is likely human error or filesystem corruption.
+found 1 dbs.
+see: http://dochub.mongodb.org/core/repair for more information
+*************
+Sat Dec 24 12:44:02 [initandlisten] exception in initAndListen: 12596 old lock file, terminating
+Sat Dec 24 12:44:02 dbexit: 
+Sat Dec 24 12:44:02 [initandlisten] shutdown: going to close listening sockets...
+Sat Dec 24 12:44:02 [initandlisten] shutdown: going to flush diaglog...
+Sat Dec 24 12:44:02 [initandlisten] shutdown: going to close sockets...
+Sat Dec 24 12:44:02 [initandlisten] shutdown: waiting for fs preallocator...
+Sat Dec 24 12:44:02 [initandlisten] shutdown: lock for final commit...
+Sat Dec 24 12:44:02 [initandlisten] shutdown: final commit...
+Sat Dec 24 12:44:02 [initandlisten] shutdown: closing all files...
+Sat Dec 24 12:44:02 [initandlisten] closeAllFiles() finished
+Sat Dec 24 12:44:02 dbexit: really exiting now
 
 
 ***** SERVER RESTARTED *****
 
 
-Sat Dec 10 18:37:32 
-Sat Dec 10 18:37:32 warning: 32-bit servers don't have journaling enabled by default. Please use --journal if you want durability.
-Sat Dec 10 18:37:32 
-Sat Dec 10 18:37:32 [initandlisten] MongoDB starting : pid=6072 port=27017 dbpath=M:\Codice\bookshelf 32-bit host=midium-PC
-Sat Dec 10 18:37:32 [initandlisten] 
-Sat Dec 10 18:37:32 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
-Sat Dec 10 18:37:32 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
-Sat Dec 10 18:37:32 [initandlisten] **       with --journal, the limit is lower
-Sat Dec 10 18:37:32 [initandlisten] 
-Sat Dec 10 18:37:32 [initandlisten] db version v2.0.1, pdfile version 4.5
-Sat Dec 10 18:37:32 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
-Sat Dec 10 18:37:32 [initandlisten] build info: windows (5, 1, 2600, 2, 'Service Pack 3') BOOST_LIB_VERSION=1_42
-Sat Dec 10 18:37:32 [initandlisten] options: { config: "m:\Codice\bookshelf\mongodb.conf", dbpath: "M:\Codice\bookshelf", logappend: "true", logpath: "M:\Codice\bookshelf\mongodb.log" }
-Sat Dec 10 18:37:32 [websvr] admin web console waiting for connections on port 28017
-Sat Dec 10 18:37:32 [initandlisten] waiting for connections on port 27017
-Sat Dec 10 18:37:49 [initandlisten] connection accepted from 127.0.0.1:4905 #1
-Sat Dec 10 18:37:57 [conn1] command admin.$cmd command: { listDatabases: 1.0 } ntoreturn:1 reslen:180 511ms
-Sat Dec 10 18:38:32 [clientcursormon] mem (MB) res:31 virt:98 mapped:32
-Sat Dec 10 18:43:32 [clientcursormon] mem (MB) res:31 virt:95 mapped:32
-Sat Dec 10 18:45:25 [conn1] end connection 127.0.0.1:4905
-Sat Dec 10 18:48:32 [clientcursormon] mem (MB) res:31 virt:94 mapped:32
-Sat Dec 10 18:53:10 [initandlisten] connection accepted from 127.0.0.1:4918 #2
-Sat Dec 10 18:53:32 [clientcursormon] mem (MB) res:31 virt:96 mapped:32
-Sat Dec 10 18:58:32 [clientcursormon] mem (MB) res:31 virt:96 mapped:32
-Sat Dec 10 18:59:34 [initandlisten] connection accepted from 127.0.0.1:5028 #3
-Sat Dec 10 19:01:21 [initandlisten] connection accepted from 127.0.0.1:5054 #4
-Sat Dec 10 19:03:32 [clientcursormon] mem (MB) res:31 virt:98 mapped:32
-Sat Dec 10 19:07:41 [initandlisten] connection accepted from 127.0.0.1:5065 #5
-Sat Dec 10 19:08:32 [clientcursormon] mem (MB) res:31 virt:99 mapped:32
-Sat Dec 10 19:13:32 [clientcursormon] mem (MB) res:31 virt:99 mapped:32
-Sat Dec 10 19:14:07 [initandlisten] connection accepted from 127.0.0.1:5088 #6
-Sat Dec 10 19:18:32 [clientcursormon] mem (MB) res:31 virt:100 mapped:32
-Sat Dec 10 19:19:03 [initandlisten] connection accepted from 127.0.0.1:5115 #7
-Sat Dec 10 19:23:32 [clientcursormon] mem (MB) res:31 virt:101 mapped:32
-Sat Dec 10 19:28:32 [clientcursormon] mem (MB) res:31 virt:101 mapped:32
-Sat Dec 10 19:32:06 Ctrl-C signal
-Sat Dec 10 19:32:06 got kill or ctrl-c signal, will terminate after current cmd ends
-Sat Dec 10 19:32:06 [ctrlCTerminate] now exiting
-Sat Dec 10 19:32:06 dbexit: 
-Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: going to close listening sockets...
-Sat Dec 10 19:32:06 [ctrlCTerminate] closing listening socket: 412
-Sat Dec 10 19:32:06 [ctrlCTerminate] closing listening socket: 416
-Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: going to flush diaglog...
-Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: going to close sockets...
-Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: waiting for fs preallocator...
-Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: closing all files...
-Sat Dec 10 19:32:06 [ctrlCTerminate] closeAllFiles() finished
-Sat Dec 10 19:32:06 [ctrlCTerminate] shutdown: removing fs lock...
-Sat Dec 10 19:32:06 dbexit: really exiting now
-Thu Dec 15 20:48:24 [initandlisten] connection accepted from 127.0.0.1:48929 #2
-Thu Dec 15 20:48:37 [initandlisten] connection accepted from 127.0.0.1:48930 #3
-Thu Dec 15 20:50:57 [initandlisten] connection accepted from 127.0.0.1:57595 #4
-Thu Dec 15 20:51:03 [clientcursormon] mem (MB) res:28 virt:128 mapped:32
-Thu Dec 15 20:51:16 got kill or ctrl c or hup signal 2 (Interrupt), will terminate after current cmd ends
-Thu Dec 15 20:51:16 [interruptThread] now exiting
-Thu Dec 15 20:51:16 dbexit: 
-Thu Dec 15 20:51:16 [interruptThread] shutdown: going to close listening sockets...
-Thu Dec 15 20:51:16 [interruptThread] closing listening socket: 5
-Thu Dec 15 20:51:16 [interruptThread] closing listening socket: 7
-Thu Dec 15 20:51:16 [interruptThread] shutdown: going to flush diaglog...
-Thu Dec 15 20:51:16 [interruptThread] shutdown: going to close sockets...
-Thu Dec 15 20:51:16 [interruptThread] shutdown: waiting for fs preallocator...
-Thu Dec 15 20:51:16 [interruptThread] shutdown: closing all files...
-Thu Dec 15 20:51:16 [interruptThread] closeAllFiles() finished
-Thu Dec 15 20:51:16 [interruptThread] shutdown: removing fs lock...
-Thu Dec 15 20:51:16 dbexit: really exiting now
-
-
-***** SERVER RESTARTED *****
-
-
-Thu Dec 15 20:51:18 
-Thu Dec 15 20:51:18 warning: 32-bit servers don't have journaling enabled by default. Please use --journal if you want durability.
-Thu Dec 15 20:51:18 
-Thu Dec 15 20:51:18 [initandlisten] MongoDB starting : pid=5283 port=27017 dbpath=/home/midium/htdocs/bookshelf 32-bit host=localhost.localdomain
-Thu Dec 15 20:51:18 [initandlisten] 
-Thu Dec 15 20:51:18 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
-Thu Dec 15 20:51:18 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
-Thu Dec 15 20:51:18 [initandlisten] **       with --journal, the limit is lower
-Thu Dec 15 20:51:18 [initandlisten] 
-Thu Dec 15 20:51:18 [initandlisten] db version v2.0.1, pdfile version 4.5
-Thu Dec 15 20:51:18 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
-Thu Dec 15 20:51:18 [initandlisten] build info: Linux domU-12-31-39-01-70-B4 2.6.21.7-2.fc8xen #1 SMP Fri Feb 15 12:39:36 EST 2008 i686 BOOST_LIB_VERSION=1_41
-Thu Dec 15 20:51:18 [initandlisten] options: { config: "/home/midium/htdocs/bookshelf/mongodb-linux.conf", dbpath: "/home/midium/htdocs/bookshelf", logappend: "true", logpath: "/home/midium/htdocs/bookshelf/mongodb.log" }
-Thu Dec 15 20:51:18 [initandlisten] couldn't unlink socket file /tmp/mongodb-27017.sockerrno:1 Operation not permitted skipping
-Thu Dec 15 20:51:18 [initandlisten] waiting for connections on port 27017
-Thu Dec 15 20:51:18 [websvr] admin web console waiting for connections on port 28017
-Thu Dec 15 20:51:45 [initandlisten] connection accepted from 127.0.0.1:57596 #1
-Thu Dec 15 20:52:09 [conn1] end connection 127.0.0.1:57596
-Thu Dec 15 20:52:18 [clientcursormon] mem (MB) res:28 virt:125 mapped:32
-Thu Dec 15 20:52:26 [initandlisten] connection accepted from 127.0.0.1:57597 #2
-Thu Dec 15 20:53:08 [initandlisten] connection accepted from 127.0.0.1:57598 #3
-Thu Dec 15 20:54:05 [initandlisten] connection accepted from 127.0.0.1:57599 #4
-Thu Dec 15 20:54:07 [initandlisten] connection accepted from 127.0.0.1:57600 #5
-Thu Dec 15 20:54:57 [initandlisten] connection accepted from 127.0.0.1:57601 #6
-Thu Dec 15 20:54:57 [conn6] build index bookshelf.authors { _id: 1 }
-Thu Dec 15 20:54:57 [conn6] build index done 0 records 0.003 secs
-Thu Dec 15 20:54:57 [conn6] fsync from getlasterror
-Thu Dec 15 20:54:57 [conn6] build index bookshelf.authors { name: 1, nationality: 1 }
-Thu Dec 15 20:54:57 [conn6] build index done 1 records 0.001 secs
-Thu Dec 15 20:57:18 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
-Thu Dec 15 21:02:18 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
-Thu Dec 15 21:07:19 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
-Thu Dec 15 21:12:19 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
-Thu Dec 15 21:17:19 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
-Thu Dec 15 21:17:48 [initandlisten] connection accepted from 127.0.0.1:56230 #7
-Thu Dec 15 21:20:10 [initandlisten] connection accepted from 127.0.0.1:56231 #8
-Thu Dec 15 21:20:10 [initandlisten] connection accepted from 127.0.0.1:56232 #9
-Thu Dec 15 21:20:10 [conn8] end connection 127.0.0.1:56231
-Thu Dec 15 21:20:27 [conn9] fsync from getlasterror
-Thu Dec 15 21:22:19 [clientcursormon] mem (MB) res:29 virt:133 mapped:32
-Thu Dec 15 21:23:18 [initandlisten] connection accepted from 127.0.0.1:36060 #10
-Thu Dec 15 21:24:17 [initandlisten] connection accepted from 127.0.0.1:36061 #11
-Thu Dec 15 21:24:17 [initandlisten] connection accepted from 127.0.0.1:36062 #12
-Thu Dec 15 21:24:17 [conn11] end connection 127.0.0.1:36061
-Thu Dec 15 21:24:54 [conn10] fsync from getlasterror
-Thu Dec 15 21:27:20 [clientcursormon] mem (MB) res:29 virt:135 mapped:32
-Thu Dec 15 21:32:20 [clientcursormon] mem (MB) res:29 virt:135 mapped:32
-Thu Dec 15 21:37:20 [clientcursormon] mem (MB) res:29 virt:135 mapped:32
-Thu Dec 15 21:42:20 [clientcursormon] mem (MB) res:29 virt:135 mapped:32
-Thu Dec 15 21:44:44 [conn2] fsync from getlasterror
-Thu Dec 15 21:47:20 [clientcursormon] mem (MB) res:29 virt:135 mapped:32
-Thu Dec 15 21:47:29 [initandlisten] connection accepted from 127.0.0.1:54602 #13
-Thu Dec 15 21:47:29 [initandlisten] connection accepted from 127.0.0.1:54603 #14
-Thu Dec 15 21:47:29 [conn13] end connection 127.0.0.1:54602
-Thu Dec 15 21:47:55 [conn3] fsync from getlasterror
-Thu Dec 15 21:48:33 [conn14] fsync from getlasterror
-Thu Dec 15 21:48:33 [conn3] fsync from getlasterror
-Thu Dec 15 21:48:34 [conn7] fsync from getlasterror
-Thu Dec 15 21:49:01 [conn6] fsync from getlasterror
-Thu Dec 15 21:49:21 [conn6] fsync from getlasterror
-Thu Dec 15 21:49:21 [initandlisten] connection accepted from 127.0.0.1:54604 #15
-Thu Dec 15 21:49:21 [conn15] end connection 127.0.0.1:54604
-Thu Dec 15 21:49:21 [initandlisten] connection accepted from 127.0.0.1:54605 #16
-Thu Dec 15 21:49:21 [conn12] fsync from getlasterror
-Thu Dec 15 21:49:38 [conn12] fsync from getlasterror
-Thu Dec 15 21:49:38 [conn12] fsync from getlasterror
-Thu Dec 15 21:49:38 [conn9] fsync from getlasterror
-Thu Dec 15 21:49:38 [conn9] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 106ms
-Thu Dec 15 21:49:38 [conn6] fsync from getlasterror
-Thu Dec 15 21:49:38 [conn16] fsync from getlasterror
-Thu Dec 15 21:49:38 [conn10] fsync from getlasterror
-Thu Dec 15 21:49:38 [conn4] fsync from getlasterror
-Thu Dec 15 21:50:31 [conn7] fsync from getlasterror
-Thu Dec 15 21:50:31 [conn14] fsync from getlasterror
-Thu Dec 15 21:50:31 [conn3] fsync from getlasterror
-Thu Dec 15 21:50:31 [conn12] fsync from getlasterror
-Thu Dec 15 21:50:31 [initandlisten] connection accepted from 127.0.0.1:54606 #17
-Thu Dec 15 21:50:31 [conn7] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 117ms
-Thu Dec 15 21:50:31 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 166ms
-Thu Dec 15 21:50:31 [conn7] fsync from getlasterror
-Thu Dec 15 21:50:31 [conn3] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 225ms
-Thu Dec 15 21:50:31 [conn12] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 262ms
-Thu Dec 15 21:50:32 [conn3] fsync from getlasterror
-Thu Dec 15 21:50:32 [conn14] fsync from getlasterror
-Thu Dec 15 21:50:32 [conn7] fsync from getlasterror
-Thu Dec 15 21:50:32 [conn12] fsync from getlasterror
-Thu Dec 15 21:50:32 [conn5] fsync from getlasterror
-Thu Dec 15 21:50:32 [conn17] fsync from getlasterror
-Thu Dec 15 21:50:32 [conn7] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 116ms
-Thu Dec 15 21:50:32 [conn3] fsync from getlasterror
-Thu Dec 15 21:50:32 [conn12] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 163ms
-Thu Dec 15 21:50:32 [conn14] fsync from getlasterror
-Thu Dec 15 21:50:32 [conn5] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 269ms
-Thu Dec 15 21:50:32 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 102ms
-Thu Dec 15 21:50:32 [conn12] fsync from getlasterror
-Thu Dec 15 21:50:32 [conn17] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 348ms
-Thu Dec 15 21:50:32 [conn7] fsync from getlasterror
-Thu Dec 15 21:50:32 [conn12] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 127ms
-Thu Dec 15 21:50:32 [conn7] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 207ms
-Thu Dec 15 21:50:33 [conn5] query bookshelf.authors ntoreturn:999999 nscanned:33 nreturned:33 reslen:2210 263ms
-Thu Dec 15 21:50:33 [conn3] query bookshelf.authors ntoreturn:999999 nscanned:33 nreturned:33 reslen:2210 291ms
-Thu Dec 15 21:50:33 [conn7] query bookshelf.authors nscanned:33 nreturned:33 reslen:2210 416ms
-Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn16] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn12] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn10] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn4] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn6] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn12] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn12] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn12] fsync from getlasterror
-Thu Dec 15 21:51:43 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn12] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn16] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 731ms
-Thu Dec 15 21:51:44 [conn4] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 690ms
-Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn12] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn12] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn12] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn9] fsync from getlasterror
-Thu Dec 15 21:51:44 [conn16] fsync from getlasterror
-Thu Dec 15 21:51:46 [conn10] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 3073ms
-Thu Dec 15 21:51:46 [conn4] fsync from getlasterror
-Thu Dec 15 21:51:46 [conn6] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 3103ms
-Thu Dec 15 21:52:05 [conn16] fsync from getlasterror
-Thu Dec 15 21:52:22 [clientcursormon] mem (MB) res:29 virt:138 mapped:32
-Thu Dec 15 21:52:54 [initandlisten] connection accepted from 127.0.0.1:51603 #18
-Thu Dec 15 21:55:17 [conn18] end connection 127.0.0.1:51603
-Thu Dec 15 21:55:23 [initandlisten] connection accepted from 127.0.0.1:51604 #19
-Thu Dec 15 21:57:22 [clientcursormon] mem (MB) res:29 virt:139 mapped:32
-Thu Dec 15 21:58:54 [conn19] CMD: drop bookshelf.authors
-Thu Dec 15 21:58:54 [conn19] command bookshelf.$cmd command: { drop: "authors" } ntoreturn:1 reslen:124 144ms
-Thu Dec 15 21:59:19 [conn3] build index bookshelf.authors { _id: 1 }
-Thu Dec 15 21:59:19 [conn3] build index done 0 records 0.001 secs
-Thu Dec 15 21:59:19 [conn3] fsync from getlasterror
-Thu Dec 15 21:59:19 [conn3] build index bookshelf.authors { name: 1, nationality: 1 }
-Thu Dec 15 21:59:19 [conn3] build index done 1 records 0.001 secs
-Thu Dec 15 22:02:22 [clientcursormon] mem (MB) res:29 virt:139 mapped:32
-Thu Dec 15 22:05:56 [conn4] fsync from getlasterror
-Thu Dec 15 22:07:23 [clientcursormon] mem (MB) res:29 virt:139 mapped:32
-Thu Dec 15 22:07:35 [conn16] fsync from getlasterror
-Thu Dec 15 22:08:41 [conn3] fsync from getlasterror
-Thu Dec 15 22:08:41 [conn3] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 255ms
-Thu Dec 15 22:12:23 [clientcursormon] mem (MB) res:29 virt:139 mapped:32
-Thu Dec 15 22:12:51 [conn17] fsync from getlasterror
-Thu Dec 15 22:12:51 [conn7] fsync from getlasterror
-Thu Dec 15 22:12:51 [conn17] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 170ms
-Thu Dec 15 22:12:51 [conn7] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 178ms
-Thu Dec 15 22:13:19 [conn14] fsync from getlasterror
-Thu Dec 15 22:13:19 [conn6] fsync from getlasterror
-Thu Dec 15 22:13:20 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 158ms
-Thu Dec 15 22:13:20 [conn6] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 136ms
-Thu Dec 15 22:14:53 [conn7] fsync from getlasterror
-Thu Dec 15 22:15:18 [conn17] fsync from getlasterror
-Thu Dec 15 22:15:18 [conn17] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 263ms
-Thu Dec 15 22:16:45 [conn5] fsync from getlasterror
-Thu Dec 15 22:17:16 [conn4] fsync from getlasterror
-Thu Dec 15 22:17:16 [conn4] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 137ms
-Thu Dec 15 22:17:23 [clientcursormon] mem (MB) res:29 virt:139 mapped:32
-Thu Dec 15 22:18:07 [initandlisten] connection accepted from 127.0.0.1:42564 #20
-Thu Dec 15 22:18:17 [conn20] fsync from getlasterror
-Thu Dec 15 22:18:17 [conn20] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 188ms
-Mon Dec 19 14:19:36 [clientcursormon] mem (MB) res:29 virt:140 mapped:32
-Mon Dec 19 14:20:43 [initandlisten] connection accepted from 127.0.0.1:42565 #21
-Mon Dec 19 14:20:57 [conn21] fsync from getlasterror
-Mon Dec 19 14:20:57 [conn21] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 211ms
-Mon Dec 19 14:24:36 [clientcursormon] mem (MB) res:29 virt:141 mapped:32
-Mon Dec 19 14:25:51 [initandlisten] connection accepted from 127.0.0.1:36061 #22
-Mon Dec 19 14:26:36 [initandlisten] connection accepted from 127.0.0.1:36063 #23
-Mon Dec 19 14:29:37 [clientcursormon] mem (MB) res:29 virt:143 mapped:32
-Mon Dec 19 14:34:37 [clientcursormon] mem (MB) res:29 virt:143 mapped:32
-Mon Dec 19 14:39:37 [clientcursormon] mem (MB) res:29 virt:143 mapped:32
-Mon Dec 19 14:44:37 [clientcursormon] mem (MB) res:29 virt:143 mapped:32
-Mon Dec 19 14:49:27 [conn17] fsync from getlasterror
-Mon Dec 19 14:49:37 [clientcursormon] mem (MB) res:29 virt:143 mapped:32
-Mon Dec 19 14:49:52 [conn3] fsync from getlasterror
-Mon Dec 19 14:50:27 [conn20] fsync from getlasterror
-Mon Dec 19 14:50:27 [conn7] fsync from getlasterror
-Mon Dec 19 14:50:46 [conn7] fsync from getlasterror
-Mon Dec 19 14:50:49 [conn7] fsync from getlasterror
-Mon Dec 19 14:50:49 [conn6] fsync from getlasterror
-Mon Dec 19 14:51:20 [conn22] fsync from getlasterror
-Mon Dec 19 14:53:05 [conn17] fsync from getlasterror
-Mon Dec 19 14:53:14 [conn17] fsync from getlasterror
-Mon Dec 19 14:53:14 [conn3] fsync from getlasterror
-Mon Dec 19 14:53:14 [initandlisten] connection accepted from 127.0.0.1:34418 #24
-Mon Dec 19 14:53:15 [conn24] fsync from getlasterror
-Mon Dec 19 14:54:37 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
-Mon Dec 19 14:59:37 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
-Mon Dec 19 15:04:38 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
-Mon Dec 19 15:09:38 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
-Mon Dec 19 15:14:38 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
-Mon Dec 19 15:19:38 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
-Mon Dec 19 15:24:38 [clientcursormon] mem (MB) res:29 virt:144 mapped:32
-Mon Dec 19 15:26:03 [initandlisten] connection accepted from 127.0.0.1:46797 #25
-Mon Dec 19 15:29:38 [clientcursormon] mem (MB) res:29 virt:145 mapped:32
-Mon Dec 19 15:34:38 [clientcursormon] mem (MB) res:29 virt:145 mapped:32
-Mon Dec 19 15:35:03 [conn5] fsync from getlasterror
-Mon Dec 19 15:35:14 [conn5] fsync from getlasterror
-Mon Dec 19 15:37:09 [conn14] remove bookshelf.authors query: { _id: ObjectId('4eea71ec7f8b9afb0a000008') } 118ms
-Mon Dec 19 15:37:32 [conn2] fsync from getlasterror
-Mon Dec 19 15:38:05 [conn16] fsync from getlasterror
-Mon Dec 19 15:39:28 [conn4] fsync from getlasterror
-Mon Dec 19 15:39:36 [conn6] fsync from getlasterror
-Mon Dec 19 15:39:36 [conn4] fsync from getlasterror
-Mon Dec 19 15:39:39 [clientcursormon] mem (MB) res:29 virt:145 mapped:32
-Mon Dec 19 15:39:47 [conn17] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn5] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn20] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn2] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn5] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 135ms
-Mon Dec 19 15:39:47 [conn17] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn5] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn20] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 203ms
-Mon Dec 19 15:39:47 [conn20] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn5] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 103ms
-Mon Dec 19 15:39:47 [conn17] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn2] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 246ms
-Mon Dec 19 15:39:47 [conn5] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn20] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 109ms
-Mon Dec 19 15:39:47 [conn2] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn17] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn20] fsync from getlasterror
-Mon Dec 19 15:39:47 [conn6] fsync from getlasterror
-Mon Dec 19 15:39:48 [conn14] fsync from getlasterror
-Mon Dec 19 15:39:48 [conn4] fsync from getlasterror
-Mon Dec 19 15:39:48 [conn7] fsync from getlasterror
-Mon Dec 19 15:40:39 [initandlisten] connection accepted from 127.0.0.1:59640 #26
-Mon Dec 19 15:43:31 [conn23] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn14] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn12] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn23] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn9] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn22] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn12] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 156ms
-Mon Dec 19 15:43:31 [conn14] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn12] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 213ms
-Mon Dec 19 15:43:31 [conn9] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 197ms
-Mon Dec 19 15:43:31 [conn9] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn12] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn23] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn22] fsync from getlasterror
-Mon Dec 19 15:43:31 [conn14] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 110ms
-Mon Dec 19 15:43:32 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 145ms
-Mon Dec 19 15:43:32 [conn12] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn9] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn23] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn22] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn14] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn12] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 130ms
-Mon Dec 19 15:43:32 [conn9] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn22] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 126ms
-Mon Dec 19 15:43:32 [conn12] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 165ms
-Mon Dec 19 15:43:32 [conn9] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 125ms
-Mon Dec 19 15:43:32 [conn23] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn14] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 102ms
-Mon Dec 19 15:43:32 [conn12] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn9] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn23] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn14] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 132ms
-Mon Dec 19 15:43:32 [conn22] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn14] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 118ms
-Mon Dec 19 15:43:32 [conn12] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn21] fsync from getlasterror
-Mon Dec 19 15:43:32 [conn24] fsync from getlasterror
-Mon Dec 19 15:43:33 [conn25] fsync from getlasterror
-Mon Dec 19 15:43:33 [conn6] fsync from getlasterror
-Mon Dec 19 15:44:30 [conn2] query bookshelf.authors ntoreturn:999999 nscanned:29 nreturned:29 reslen:1863 4600ms
-Mon Dec 19 15:45:34 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
-Mon Dec 19 15:46:07 [conn6] query bookshelf.authors ntoreturn:999999 nscanned:19 nreturned:19 reslen:1253 163ms
-Mon Dec 19 15:48:14 [conn20] fsync from getlasterror
-Mon Dec 19 15:48:14 [conn25] fsync from getlasterror
-Mon Dec 19 15:48:14 [conn20] build index bookshelf.authors { _id: 1, name: 1, nationality: 1 }
-Mon Dec 19 15:48:14 [conn20] build index done 7 records 0.02 secs
-Mon Dec 19 15:48:14 [conn25] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 176ms
-Mon Dec 19 15:48:15 [conn20] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn25] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn16] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn24] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn6] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn23] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn3] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn2] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn20] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn25] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn16] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn25] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn20] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn16] fsync from getlasterror
-Mon Dec 19 15:48:15 [conn24] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 364ms
-Mon Dec 19 15:48:15 [conn6] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 373ms
-Mon Dec 19 15:48:15 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 380ms
-Mon Dec 19 15:48:15 [conn3] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 388ms
-Mon Dec 19 15:48:15 [conn2] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 397ms
-Mon Dec 19 15:50:47 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
-Mon Dec 19 15:51:35 [conn9] fsync from getlasterror
-Mon Dec 19 15:51:35 [conn9] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 135ms
-Mon Dec 19 15:52:11 [conn5] fsync from getlasterror
-Mon Dec 19 15:52:12 [conn24] fsync from getlasterror
-Mon Dec 19 15:52:12 [conn26] fsync from getlasterror
-Mon Dec 19 15:52:12 [conn22] fsync from getlasterror
-Mon Dec 19 15:52:12 [conn12] fsync from getlasterror
-Mon Dec 19 15:55:56 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
-Mon Dec 19 15:55:58 [conn2] fsync from getlasterror
-Mon Dec 19 15:55:58 [conn2] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 124ms
-Mon Dec 19 15:57:27 [conn3] fsync from getlasterror
-Mon Dec 19 15:57:27 [conn3] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 169ms
-Mon Dec 19 15:57:46 [conn3] fsync from getlasterror
-Mon Dec 19 15:57:47 [conn3] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 176ms
-Mon Dec 19 15:58:30 [conn23] fsync from getlasterror
-Mon Dec 19 15:58:30 [conn23] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 139ms
-Mon Dec 19 16:00:56 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
-Mon Dec 19 16:04:11 [conn22] fsync from getlasterror
-Mon Dec 19 16:04:11 [conn24] fsync from getlasterror
-Mon Dec 19 16:04:11 [conn2] fsync from getlasterror
-Mon Dec 19 16:05:10 [conn9] fsync from getlasterror
-Mon Dec 19 16:05:10 [conn9] command bookshelf.$cmd command: { getlasterror: 1, fsync: true } ntoreturn:1 reslen:83 136ms
-Mon Dec 19 16:05:57 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
-Tue Dec 20 09:32:44 [clientcursormon] mem (MB) res:29 virt:146 mapped:32
+Sat Dec 24 12:48:49 
+Sat Dec 24 12:48:49 warning: 32-bit servers don't have journaling enabled by default. Please use --journal if you want durability.
+Sat Dec 24 12:48:49 
+Sat Dec 24 12:48:49 [initandlisten] MongoDB starting : pid=4384 port=27017 dbpath=/home/midium/htdocs/bookshelf 32-bit host=localhost.localdomain
+Sat Dec 24 12:48:49 [initandlisten] 
+Sat Dec 24 12:48:49 [initandlisten] ** NOTE: when using MongoDB 32 bit, you are limited to about 2 gigabytes of data
+Sat Dec 24 12:48:49 [initandlisten] **       see http://blog.mongodb.org/post/137788967/32-bit-limitations
+Sat Dec 24 12:48:49 [initandlisten] **       with --journal, the limit is lower
+Sat Dec 24 12:48:49 [initandlisten] 
+Sat Dec 24 12:48:49 [initandlisten] db version v2.0.1, pdfile version 4.5
+Sat Dec 24 12:48:49 [initandlisten] git version: 3a5cf0e2134a830d38d2d1aae7e88cac31bdd684
+Sat Dec 24 12:48:49 [initandlisten] build info: Linux domU-12-31-39-01-70-B4 2.6.21.7-2.fc8xen #1 SMP Fri Feb 15 12:39:36 EST 2008 i686 BOOST_LIB_VERSION=1_41
+Sat Dec 24 12:48:49 [initandlisten] options: { config: "/home/midium/htdocs/bookshelf/mongodb-linux.conf", dbpath: "/home/midium/htdocs/bookshelf", logappend: "true", logpath: "/home/midium/htdocs/bookshelf/mongodb.log" }
+Sat Dec 24 12:48:49 [initandlisten] waiting for connections on port 27017
+Sat Dec 24 12:48:49 [websvr] admin web console waiting for connections on port 28017
+Sat Dec 24 12:49:15 [initandlisten] connection accepted from 127.0.0.1:51442 #1
+Sat Dec 24 12:49:23 [conn1] repairDatabase test
+Sat Dec 24 12:49:23 [conn1]  test repairDatabase test
+Sat Dec 24 12:49:49 [clientcursormon] mem (MB) res:12 virt:93 mapped:0
+Sat Dec 24 12:49:53 [initandlisten] connection accepted from 127.0.0.1:51443 #2
+Sat Dec 24 12:50:50 [clientcursormon] mem (MB) res:28 virt:126 mapped:32
+Sat Dec 24 12:52:41 [initandlisten] connection accepted from 127.0.0.1:51444 #3
+Sat Dec 24 12:55:50 [clientcursormon] mem (MB) res:29 virt:128 mapped:32
+Sat Dec 24 13:00:50 [clientcursormon] mem (MB) res:29 virt:128 mapped:32
+Sat Dec 24 13:05:50 [initandlisten] connection accepted from 127.0.0.1:46161 #4
+Sat Dec 24 13:05:50 [clientcursormon] mem (MB) res:29 virt:129 mapped:32
+Sat Dec 24 13:05:54 [initandlisten] connection accepted from 127.0.0.1:46162 #5
+Sat Dec 24 13:08:49 [initandlisten] connection accepted from 127.0.0.1:46134 #6
+Sat Dec 24 13:09:57 [initandlisten] connection accepted from 127.0.0.1:46135 #7
+Sat Dec 24 13:10:40 [initandlisten] connection accepted from 127.0.0.1:46136 #8
+Sat Dec 24 13:10:50 [clientcursormon] mem (MB) res:29 virt:133 mapped:32
+Sat Dec 24 13:12:44 [initandlisten] connection accepted from 127.0.0.1:38747 #9
+Sat Dec 24 13:12:54 [initandlisten] connection accepted from 127.0.0.1:38748 #10
+Sat Dec 24 13:14:21 [initandlisten] connection accepted from 127.0.0.1:38749 #11
+Sat Dec 24 13:14:21 [initandlisten] connection accepted from 127.0.0.1:38750 #12
+Sat Dec 24 13:14:21 [conn11] end connection 127.0.0.1:38749
+Sat Dec 24 13:15:50 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Sat Dec 24 13:19:16 [initandlisten] connection accepted from 127.0.0.1:58127 #13
+Sat Dec 24 13:19:16 [conn13] end connection 127.0.0.1:58127
+Sat Dec 24 13:19:16 [initandlisten] connection accepted from 127.0.0.1:58128 #14
+Mon Dec 26 12:26:48 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 12:31:48 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 12:36:49 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 12:41:49 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 12:42:18 [conn9] end connection 127.0.0.1:38747
+Mon Dec 26 12:42:18 [conn6] end connection 127.0.0.1:46134
+Mon Dec 26 12:42:18 [conn14] end connection 127.0.0.1:58128
+Mon Dec 26 12:42:18 [conn4] end connection 127.0.0.1:46161
+Mon Dec 26 12:42:18 [conn5] end connection 127.0.0.1:46162
+Mon Dec 26 12:42:18 [conn3] end connection 127.0.0.1:51444
+Mon Dec 26 12:42:18 [conn7] end connection 127.0.0.1:46135
+Mon Dec 26 12:42:18 [conn12] end connection 127.0.0.1:38750
+Mon Dec 26 12:42:18 [conn10] end connection 127.0.0.1:38748
+Mon Dec 26 12:42:18 [conn8] end connection 127.0.0.1:46136
+Mon Dec 26 12:42:18 [conn2] end connection 127.0.0.1:51443
+Mon Dec 26 12:44:27 [initandlisten] connection accepted from 127.0.0.1:45793 #15
+Mon Dec 26 12:46:49 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 12:46:50 [initandlisten] connection accepted from 127.0.0.1:45794 #16
+Mon Dec 26 12:47:45 [initandlisten] connection accepted from 127.0.0.1:45795 #17
+Mon Dec 26 12:48:06 [initandlisten] connection accepted from 127.0.0.1:45796 #18
+Mon Dec 26 12:49:15 [initandlisten] connection accepted from 127.0.0.1:45797 #19
+Mon Dec 26 12:49:35 [initandlisten] connection accepted from 127.0.0.1:45798 #20
+Mon Dec 26 12:51:49 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 12:55:45 [initandlisten] connection accepted from 127.0.0.1:57034 #21
+Mon Dec 26 12:56:49 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:00:28 [initandlisten] connection accepted from 127.0.0.1:33178 #22
+Mon Dec 26 13:01:49 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:03:22 [initandlisten] connection accepted from 127.0.0.1:59717 #23
+Mon Dec 26 13:04:07 [initandlisten] connection accepted from 127.0.0.1:59718 #24
+Mon Dec 26 13:06:50 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:07:18 [initandlisten] connection accepted from 127.0.0.1:59719 #25
+Mon Dec 26 13:11:50 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:16:50 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:21:50 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:27:25 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:32:25 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:37:25 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:42:25 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:47:25 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:52:26 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 13:57:26 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:02:26 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:07:26 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:12:26 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:17:26 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:22:26 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:27:27 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:32:27 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:37:27 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:42:27 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:47:27 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:52:28 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 14:57:28 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Mon Dec 26 15:02:28 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Tue Dec 27 09:16:19 [clientcursormon] mem (MB) res:29 virt:137 mapped:32
+Tue Dec 27 09:45:49 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 09:50:49 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 09:55:49 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:00:49 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:05:49 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:10:49 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:15:49 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:20:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:25:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:30:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:35:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:40:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:45:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:50:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 10:55:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:00:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:05:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:10:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:15:50 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:20:51 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:25:51 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:30:51 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:35:51 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:40:51 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:45:51 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:50:51 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 11:55:51 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:00:52 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:05:52 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:10:52 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:15:52 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:20:52 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:25:52 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:30:52 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:35:52 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:40:52 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:45:52 [clientcursormon] mem (MB) res:13 virt:145 mapped:32
+Tue Dec 27 12:46:32 [conn21] build index bookshelf.books { _id: 1 }
+Tue Dec 27 12:46:32 [conn21] build index done 0 records 0.002 secs
+Tue Dec 27 12:46:32 [conn21] build index bookshelf.books { _id: 1, title: 1, original: 1, author: 1, publisher: 1, genres: 1, pages: 1, vote: 1 }
+Tue Dec 27 12:46:32 [conn21] build index done 1 records 0.001 secs
+Tue Dec 27 12:46:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:07:14 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:12:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:17:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:22:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:27:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:32:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:37:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:42:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:47:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:52:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 09:57:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 10:02:15 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 10:07:16 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 10:12:16 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 10:17:16 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 10:22:16 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 10:27:16 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 10:32:16 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 10:37:16 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Dec 28 10:42:16 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 09:50:40 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 09:55:40 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:00:40 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:05:40 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:10:40 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:15:40 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:20:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:25:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:30:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:35:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:40:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:45:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:50:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 10:55:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:00:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:05:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:10:41 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:15:42 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:20:42 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:25:42 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:30:42 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:35:43 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:40:43 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:45:43 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:50:43 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 11:55:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:00:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:05:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:10:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:15:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:20:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:25:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:30:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:35:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:40:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:45:44 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:50:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 12:55:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:00:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:05:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:10:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:15:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:20:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:25:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:26:52 [conn15] remove bookshelf.books query: { _id: ObjectId('4ef9be287f8b9aab1a000006') } 154ms
+Wed Jan  4 13:30:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:35:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:40:45 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:45:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:50:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 13:55:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:00:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:05:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:10:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:14:12 [conn2] query bookshelf.authors ntoreturn:999999 idhack:1 reslen:102 110ms
+Wed Jan  4 14:15:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:20:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:25:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:30:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:35:46 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:40:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:45:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:50:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 14:55:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:00:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:04:23 [conn7] insert bookshelf.system.indexes 133ms
+Wed Jan  4 15:05:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:10:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:15:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:20:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:25:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:30:47 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:35:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:40:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:45:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:50:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 15:55:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:00:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:05:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:10:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:15:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:20:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:25:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:30:48 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:35:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:40:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:45:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:50:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 16:55:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:00:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:05:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:10:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:15:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:20:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:25:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:30:49 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:35:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:40:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:45:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:50:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 17:55:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:00:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:05:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:08:39 [conn24] query bookshelf.authors ntoreturn:999999 idhack:1 reslen:96 156ms
+Wed Jan  4 18:10:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:15:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:20:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:25:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:30:43 [conn24] query bookshelf.publishers ntoreturn:999999 nscanned:8 scanAndOrder:1 nreturned:8 reslen:568 149ms
+Wed Jan  4 18:30:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:35:50 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:40:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:45:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:50:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 18:55:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:00:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:05:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:10:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:12:57 [conn19] query bookshelf.publishers ntoreturn:999999 idhack:1 reslen:85 180ms
+Wed Jan  4 19:15:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:20:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:25:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:26:07 [conn29] query bookshelf.authors ntoreturn:999999 idhack:1 reslen:102 267ms
+Wed Jan  4 19:30:51 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:35:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:40:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:45:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:49:57 [conn5] query bookshelf.publishers ntoreturn:999999 idhack:1 reslen:85 255ms
+Wed Jan  4 19:50:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 19:55:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 20:00:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 20:05:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 20:10:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 20:15:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 20:20:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Wed Jan  4 20:25:52 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 00:18:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 00:23:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 00:28:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 00:33:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 00:38:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 00:43:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 09:57:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:02:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:07:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:12:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:17:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:22:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:27:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:32:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:37:05 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:42:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:47:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:52:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 10:57:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:02:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:07:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:12:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:17:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:22:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:27:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:32:06 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:37:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:42:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:47:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:52:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 11:57:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:02:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:07:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:12:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:17:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:22:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:27:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:32:07 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:37:08 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:42:08 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:47:08 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:52:08 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 12:57:08 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:02:08 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:07:08 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:12:08 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:17:08 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:22:08 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:27:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:32:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:37:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:42:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:47:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:52:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 13:57:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:02:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:07:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:12:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:17:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:22:09 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:27:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:32:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:37:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:42:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:47:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:52:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 14:57:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:02:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:07:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:12:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:17:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:22:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:27:10 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:32:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:37:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:42:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:47:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:52:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 15:57:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:02:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:07:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:12:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:17:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:22:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:27:11 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:32:12 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:37:12 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:42:12 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:47:12 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:52:12 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 16:57:12 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:02:12 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:07:12 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:12:12 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:17:12 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:22:13 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:27:13 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:32:13 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:37:13 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:42:13 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:47:13 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:52:13 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 17:57:13 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 18:02:13 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 18:07:14 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 18:12:14 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 18:17:14 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 18:22:14 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 18:27:14 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 18:32:14 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 18:37:14 [clientcursormon] mem (MB) res:15 virt:145 mapped:32
+Thu Jan  5 18:42:14 [clientcursormon] mem (MB) res:15 virt:145 mapped:32

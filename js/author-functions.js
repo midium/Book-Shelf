@@ -3,7 +3,7 @@
 	$('#add-edit-form #submit').live("click",function() {
 		// Fade in the progress bar
 		$('#add-edit-form #formProgress').hide();
-		$('#add-edit-form #formProgress').html('<img src="/assets/images/ajax-loader.gif" style="margin:10px;"/> Sending&hellip;');
+		$('#add-edit-form #formProgress').html('<img src="/assets/images/ajax-loader.gif" /> Sending&hellip;');
 		$('#add-edit-form #formProgress').fadeIn();
 		
 		// Disable the submit button
@@ -23,18 +23,14 @@
 		
 		// Validate the data
 		if(name=='') {
-			$('#add-edit-form #authorname').val('This is a required field.');
-			$('#add-edit-form #authorname').focus();
-			$('#add-edit-form #authorname').css("background","red");
+			$('#add-edit-form #authorname').attr('placeholder','This is a required field.');
 			
 			isFocus=1;
 			isError=1;
 		}
 		if(nationality=='') {
-			$('#add-edit-form #nationality').val('This is a required field.');
+			$('#add-edit-form #nationality').attr('placeholder','This is a required field.');
 			if(isFocus==0) {
-				$('#add-edit-form #nationality').focus();
-				$('#add-edit-form #nationality').css("background","red");
 				isFocus=1;
 			}
 			isError=1;
@@ -79,7 +75,8 @@
 				// Activate the submit button
 				$('#add-edit-form #submit').attr("disabled", "");				
 				
-				show_view('/main/authors');
+				$('div#body-container').html(msg);
+				//show_view('/main/authors');
 				
 				return;
 			},
@@ -104,11 +101,15 @@
 	$("div#authors-list").css({"top":"85px"});
 	$("div#add-edit-form").attr("edit","false");
 	$("div#add-edit-form").attr("author_id","");
+	$('input#authorname').focus();
   });
   
   $('div#submit-close').live("click",function() {
 	 	$("div#add-edit-form").toggle(false);
-		$("div#authors-list").css({"top":"45px"});			
+		$("div#authors-list").css({"top":"45px"});	
+		
+		$('#add-edit-form #authorname').attr('placeholder','');
+		$('#add-edit-form #nationality').attr('placeholder','');
   });
   
   $('li#button.button').live("hover", function() {
@@ -139,8 +140,8 @@
 			data: dataString,
 			success: function(msg) {
 
-				//$('#body-container').html(msg);
-				show_view('/main/authors');
+				$('div#body-container').html(msg);
+				//show_view('/main/authors');
 
 			},
 			error: function(ob,errStr) {
@@ -177,6 +178,8 @@
 		
 		$("input#authorname").val($(this).parent().find('#name').html());
 		$("input#nationality").val($(this).parent().find('#nat').html());
+		
+		$('input#authorname').focus();
 		
   });
   //---------------------------------

@@ -5,6 +5,7 @@ class Main extends MY_Controller {
     function __construct()
     {
         parent::__construct();
+		$this->load->model('mongo_manage','',true);
     }
 
 	public function index()
@@ -31,11 +32,9 @@ class Main extends MY_Controller {
 		
 		$view_name = $this->input->post('view');
 		
-		$this->load->model('mongo_manage','',true);
-
 		switch ($view_name) {
 			case '/main/books':
-				
+				$data['books']=$this->mongo_manage->getBooksList();
 				break;
 				
 			case '/main/authors':
@@ -46,6 +45,10 @@ class Main extends MY_Controller {
 				$data['publishers']=$this->mongo_manage->getPublishersList();			
 				break;
 							
+			case '/main/genres':
+				$data['genres']=$this->mongo_manage->getGenresList();			
+				break;
+				
 			default:
 				break;
 		}
